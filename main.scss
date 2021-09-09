@@ -1,5 +1,9 @@
 @import "./sass/utils/variables";
+@import "./sass/utils/mixins";
 
 @import "./sass/base/body";
 @import "./sass/base/article";
-@import "./sass/base/image";
+
+@import "./sass/layouts/header";
+@import "./sass/layouts/city-info";
+@import "./sass/layouts/figure";

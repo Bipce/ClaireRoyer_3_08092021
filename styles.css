@@ -1,14 +1,77 @@
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  margin: 0;
+}
+
+.page__title {
+  font-family: "Shrikhand", cursive;
 }
 
 .restaurant-card img {
   width: 200px;
 }
 
-.image {
-  width: 200px;
+@media screen and (max-width: 576px) {
+  header {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  header img {
+    width: 50%;
+  }
+
+  h1 {
+    width: 100%;
+  }
+}
+i {
+  width: 25%;
+  font-size: 1.2rem;
+}
+
+.container header {
+  text-align: center;
+}
+
+.city {
+  text-align: center;
+}
+.city__p {
+  background-color: #e6e6e6;
+  border-top: #d9d9d9 0.2rem solid;
+  padding: 1rem 0;
+  margin: 0;
+}
+.city i {
+  width: 10%;
+}
+.city span {
+  display: inline-block;
+  width: 50%;
+  margin-left: -30px;
+}
+
+.info-block {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+.info-block h2 {
+  padding-top: 2rem;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  margin-top: 0;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.card-image {
+  margin: 0 -18px;
+}
+.card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 30vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
