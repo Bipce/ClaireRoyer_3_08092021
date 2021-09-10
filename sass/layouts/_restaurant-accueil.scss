@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   background-color: $bg-color;
+  padding-bottom: 3rem;
   & h2 {
     padding-top: 2rem;
     @include margin;
   }
   & a {
-    text-decoration: none;
     color: black;
   }
   &__card {
@@ -27,21 +27,28 @@
     &--size {
       font-size: 1rem;
       margin: 0.5rem;
+      padding: 0 0 1.2rem 0.3rem;
     }
   }
   & article {
     position: relative;
+    box-shadow: 0 7px 10px 0 darken($color: white, $amount: 20%);
+    margin-bottom: 1rem;
+
     & h2 {
       font-size: 1rem;
-      padding: 0;
+      padding: 0 0 0 0.3rem;
       margin: 0.5rem;
     }
   }
   & button {
     border: none;
     position: absolute;
-    bottom: 3rem;
+    bottom: 1.5rem;
     right: 1rem;
     background-color: white;
+    &:active {
+      background-color: $color-primary;
+    }
   }
 }

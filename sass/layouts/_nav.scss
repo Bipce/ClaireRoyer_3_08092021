@@ -10,4 +10,12 @@
   & li {
     text-align: center;
   }
+  & .button {
+    &:active {
+      background-color: lighten($color: $color-primary, $amount: 30%);
+    }
+  }
+  & i {
+    color: darken($color: white, $amount: 50%);
+  }
 }
