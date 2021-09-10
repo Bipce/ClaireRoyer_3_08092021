@@ -8,8 +8,14 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
-.restaurant-card img {
-  width: 200px;
+.restaurant__card figure {
+  margin: 0;
+}
+.restaurant__card img {
+  object-fit: cover;
+  width: 100%;
+  height: 20vh;
+  border-radius: 20px 20px 0 0;
 }
 
 @media screen and (max-width: 576px) {
@@ -59,10 +65,13 @@ i {
 .info-block h2 {
   padding-top: 2rem;
   font-weight: bolder;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin-top: 0;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin: 0 3rem;
+}
+.info-block h3 {
+  font-weight: normal;
+  font-size: 1.2rem;
 }
 
 .card-image {
@@ -72,6 +81,104 @@ i {
   object-fit: cover;
   width: 100%;
   height: 30vh;
+}
+
+.menu h2 {
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.menu ol {
+  padding: 0;
+}
+.menu li {
+  text-align: center;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+.restaurant h2 {
+  padding-top: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.restaurant a {
+  text-decoration: none;
+  color: black;
+}
+.restaurant__card {
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.restaurant__card--new {
+  background-color: #a6deb5;
+  color: #246134;
+  width: 15%;
+  padding: 0.2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.8rem;
+}
+.restaurant__card--size {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+.restaurant article {
+  position: relative;
+}
+.restaurant article h2 {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0.5rem;
+}
+.restaurant button {
+  border: none;
+  position: absolute;
+  bottom: 3rem;
+  right: 1rem;
+  background-color: white;
+}
+
+.button {
+  font-size: 0.9rem;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 7px 10px 0 #b3b3b3;
+  background-color: #bc95e9;
+  color: white;
+  font-weight: 510;
+  padding: 16px;
+  margin-bottom: 3rem;
+}
+.button--color {
+  background-color: #f2f2f2;
+  color: black;
+  width: 80%;
+  margin: 0.8rem 0;
+  width: 85%;
+  margin: 0.8rem auto;
+}
+.button--color:hover {
+  background-color: #ae80e5;
+}
+.button__icon {
+  margin-left: -2rem;
+}
+.button__icon:hover {
+  background-color: #9356dc;
+}
+.button__icon--list {
+  margin-left: -4rem;
+}
+.button__icon--store {
+  margin-left: -3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

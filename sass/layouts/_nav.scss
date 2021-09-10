@@ -1,0 +1,13 @@
+.menu {
+  & h2 {
+    font-weight: 600;
+    margin-top: 2.5rem;
+    @include margin;
+  }
+  & ol {
+    padding: 0;
+  }
+  & li {
+    text-align: center;
+  }
+}

@@ -1,0 +1,47 @@
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color;
+  & h2 {
+    padding-top: 2rem;
+    @include margin;
+  }
+  & a {
+    text-decoration: none;
+    color: black;
+  }
+  &__card {
+    background-color: white;
+    border-radius: 20px;
+    @include margin;
+    &--new {
+      background-color: $bg-color-new;
+      color: $color-txt-new;
+      width: 15%;
+      padding: 0.2rem;
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      font-size: 0.8rem;
+    }
+    &--size {
+      font-size: 1rem;
+      margin: 0.5rem;
+    }
+  }
+  & article {
+    position: relative;
+    & h2 {
+      font-size: 1rem;
+      padding: 0;
+      margin: 0.5rem;
+    }
+  }
+  & button {
+    border: none;
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+    background-color: white;
+  }
+}

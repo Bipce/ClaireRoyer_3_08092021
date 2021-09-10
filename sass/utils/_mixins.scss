@@ -8,3 +8,10 @@
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
+
+@mixin button {
+  font-size: 0.9rem;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 7px 10px 0 darken($color: white, $amount: 30%);
+}
