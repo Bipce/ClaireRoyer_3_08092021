@@ -29,3 +29,14 @@
     }
   }
 }
+
+.page button {
+  border-radius: 30px;
+  border: none;
+  padding: 1rem 3rem;
+  color: white;
+  background-color: $color-primary;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}

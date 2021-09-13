@@ -84,7 +84,7 @@ i {
 .card-image img {
   object-fit: cover;
   width: 100%;
-  height: 30vh;
+  height: 40vh;
 }
 
 .menu h2 {
@@ -162,6 +162,64 @@ i {
   background-color: #9356dc;
 }
 
+.page {
+  margin-top: -3.2rem;
+  border-radius: 40px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__title {
+  width: 85%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+.page__title i {
+  text-align: center;
+}
+.page .block {
+  width: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.page .block h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.page .block__card {
+  width: 85%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  box-shadow: 0 7px 15px 0 #cccccc;
+  border-radius: 20px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+}
+.page .block__card h4,
+.page .block__card p {
+  margin-top: 0.1rem;
+  margin-bottom: 0rem;
+}
+.page .block h4 {
+  font-size: 1.2rem;
+}
+.page .price {
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
 footer {
   background-color: #333333;
   color: white;
@@ -225,6 +283,17 @@ footer a {
 }
 .button__icon--store {
   margin-left: -3rem;
+}
+
+.page button {
+  border-radius: 30px;
+  border: none;
+  padding: 1rem 3rem;
+  color: white;
+  background-color: #9356dc;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
