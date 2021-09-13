@@ -119,12 +119,16 @@ i {
 }
 .restaurant a {
   color: black;
+  height: 380px;
 }
 .restaurant__card {
   background-color: white;
   border-radius: 20px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+.restaurant__card figure {
+  padding-bottom: 0.1rem;
 }
 .restaurant__card--new {
   background-color: #a6deb5;
@@ -139,7 +143,7 @@ i {
 .restaurant__card--size {
   font-size: 1rem;
   margin: 0.5rem;
-  padding: 0 0 1.2rem 0.3rem;
+  padding: 0 0 1rem 0.3rem;
 }
 .restaurant article {
   position: relative;
