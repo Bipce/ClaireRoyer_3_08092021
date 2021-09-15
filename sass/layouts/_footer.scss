@@ -1,27 +1,29 @@
-footer {
-  background-color: darken($color: white, $amount: 80%);
-  color: white;
-  padding: 1rem 0;
-  & h2 {
-    margin: 0;
-    font-family: "Shrikhand", cursive;
-    @include margin;
-    font-size: 1rem;
-  }
-  & ul {
-    padding: 0;
-  }
-  & li {
-    @include margin;
-    font-size: 1rem;
-    list-style: none;
-    margin-bottom: 0.5rem;
-  }
-  & i {
-    width: 8%;
-    font-size: 0.8rem;
-  }
-  & a {
+@include mobile-only {
+  footer {
+    background-color: darken($color: white, $amount: 80%);
     color: white;
+    padding: 1rem 0;
+    & h2 {
+      margin: 0;
+      font-family: "Shrikhand", cursive;
+      @include margin;
+      font-size: 1rem;
+    }
+    & ul {
+      padding: 0;
+    }
+    & li {
+      @include margin;
+      font-size: 1rem;
+      list-style: none;
+      margin-bottom: 0.5rem;
+    }
+    & i {
+      width: 8%;
+      font-size: 0.8rem;
+    }
+    & a {
+      color: white;
+    }
   }
 }

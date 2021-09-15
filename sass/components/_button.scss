@@ -1,42 +1,44 @@
-.button {
-  @include button;
-  background-color: lighten($color-primary, 15%);
-  color: white;
-  font-weight: 510;
-  padding: 16px;
-  margin-bottom: 3rem;
-  &--color {
-    background-color: $bg-color;
-    color: black;
-    width: 80%;
-    margin: 0.8rem 0;
-    width: 85%;
-    margin: 0.8rem auto;
-    &:hover {
-      background-color: lighten($color: $color-primary, $amount: 10%);
+@include mobile-only {
+  .button {
+    @include button;
+    background-color: lighten($color-primary, 15%);
+    color: white;
+    font-weight: 510;
+    padding: 16px;
+    margin-bottom: 3rem;
+    &--color {
+      background-color: $bg-color;
+      color: black;
+      width: 80%;
+      margin: 0.8rem 0;
+      width: 85%;
+      margin: 0.8rem auto;
+      &:hover {
+        background-color: lighten($color: $color-primary, $amount: 10%);
+      }
+    }
+    &__icon {
+      margin-left: -2rem;
+      &:hover {
+        background-color: $color-primary;
+      }
+      &--list {
+        margin-left: -4rem;
+      }
+      &--store {
+        margin-left: -3rem;
+      }
     }
   }
-  &__icon {
-    margin-left: -2rem;
-    &:hover {
-      background-color: $color-primary;
-    }
-    &--list {
-      margin-left: -4rem;
-    }
-    &--store {
-      margin-left: -3rem;
-    }
-  }
-}
 
-.page button {
-  border-radius: 30px;
-  border: none;
-  padding: 1rem 3rem;
-  color: white;
-  background-color: $color-primary;
-  font-size: 1rem;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
+  .page button {
+    border-radius: 30px;
+    border: none;
+    padding: 1rem 3rem;
+    color: white;
+    background-color: $color-primary;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
 }

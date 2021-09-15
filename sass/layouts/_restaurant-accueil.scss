@@ -1,58 +1,60 @@
-.restaurant {
-  display: flex;
-  flex-direction: column;
-  background-color: $bg-color;
-  padding-bottom: 3rem;
-  & h2 {
-    padding-top: 2rem;
-    @include margin;
-  }
-  & a {
-    color: black;
-    height: 380px;
-  }
-  &__card {
-    background-color: white;
-    border-radius: 20px;
-    @include margin;
-    figure {
-      padding-bottom: 0.1rem;
-    }
-    &--new {
-      background-color: $bg-color-new;
-      color: $color-txt-new;
-      width: 15%;
-      padding: 0.2rem;
-      position: absolute;
-      top: 0.5rem;
-      right: 0.5rem;
-      font-size: 0.8rem;
-    }
-    &--size {
-      font-size: 1rem;
-      margin: 0.5rem;
-      padding: 0 0 1rem 0.3rem;
-    }
-  }
-  & article {
-    position: relative;
-    box-shadow: 0 7px 10px 0 darken($color: white, $amount: 20%);
-    margin-bottom: 1rem;
-
+@include mobile-only {
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color;
+    padding-bottom: 3rem;
     & h2 {
-      font-size: 1rem;
-      padding: 0 0 0 0.3rem;
-      margin: 0.5rem;
+      padding-top: 2rem;
+      @include margin;
     }
-  }
-  & button {
-    border: none;
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1rem;
-    background-color: white;
-    &:active {
-      background-color: $color-primary;
+    & a {
+      color: black;
+      height: 380px;
+    }
+    &__card {
+      background-color: white;
+      border-radius: 20px;
+      @include margin;
+      figure {
+        padding-bottom: 0.1rem;
+      }
+      &--new {
+        background-color: $bg-color-new;
+        color: $color-txt-new;
+        width: 15%;
+        padding: 0.2rem;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 0.8rem;
+      }
+      &--size {
+        font-size: 1rem;
+        margin: 0.5rem;
+        padding: 0 0 1rem 0.3rem;
+      }
+    }
+    & article {
+      position: relative;
+      box-shadow: 0 7px 10px 0 darken($color: white, $amount: 20%);
+      margin-bottom: 1rem;
+
+      & h2 {
+        font-size: 1rem;
+        padding: 0 0 0 0.3rem;
+        margin: 0.5rem;
+      }
+    }
+    & button {
+      border: none;
+      position: absolute;
+      bottom: 1.5rem;
+      right: 1rem;
+      background-color: white;
+      &:active {
+        background-color: $color-primary;
+      }
     }
   }
 }

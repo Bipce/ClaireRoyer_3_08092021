@@ -1,21 +1,23 @@
-.menu {
-  & h2 {
-    font-weight: 600;
-    margin-top: 2.5rem;
-    @include margin;
-  }
-  & ol {
-    padding: 0;
-  }
-  & li {
-    text-align: center;
-  }
-  & .button {
-    &:active {
-      background-color: lighten($color: $color-primary, $amount: 30%);
+@include mobile-only {
+  .menu {
+    & h2 {
+      font-weight: 600;
+      margin-top: 2.5rem;
+      @include margin;
     }
-  }
-  & i {
-    color: darken($color: white, $amount: 50%);
+    & ol {
+      padding: 0;
+    }
+    & li {
+      text-align: center;
+    }
+    & .button {
+      &:active {
+        background-color: lighten($color: $color-primary, $amount: 30%);
+      }
+    }
+    & i {
+      color: darken($color: white, $amount: 50%);
+    }
   }
 }
