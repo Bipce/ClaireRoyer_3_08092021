@@ -1,7 +1,7 @@
 @include mobile-only {
   .button {
     @include button;
-    background-color: lighten($color-primary, 15%);
+    background: linear-gradient($color-primary, $color-secondary);
     color: white;
     font-weight: 510;
     padding: 16px;

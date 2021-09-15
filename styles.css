@@ -167,15 +167,19 @@ a {
     padding: 0 0 0 0.3rem;
     margin: 0.5rem;
   }
-  .restaurant button {
-    border: none;
+  .restaurant i {
+    font-size: 1.5rem;
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 2rem;
     right: 1rem;
-    background-color: white;
   }
-  .restaurant button:active {
-    background-color: #9356dc;
+  .restaurant i:active {
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    transition: 0.2s;
   }
 }
 @media screen and (max-width: 576px) {
@@ -281,7 +285,7 @@ a {
     border-radius: 20px;
     border: none;
     box-shadow: 0 7px 10px 0 #b3b3b3;
-    background-color: #bc95e9;
+    background: linear-gradient(#9356dc, #ff79da);
     color: white;
     font-weight: 510;
     padding: 16px;

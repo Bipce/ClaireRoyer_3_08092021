@@ -46,14 +46,18 @@
         margin: 0.5rem;
       }
     }
-    & button {
-      border: none;
+    & i {
+      font-size: 1.5rem;
       position: absolute;
-      bottom: 1.5rem;
+      bottom: 2rem;
       right: 1rem;
-      background-color: white;
       &:active {
-        background-color: $color-primary;
+        background: -webkit-linear-gradient(#9356dc, #ff79da);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        transition: 0.2s;
       }
     }
   }
