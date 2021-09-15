@@ -104,17 +104,50 @@ a {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
-  .menu ol {
-    padding: 0;
-  }
-  .menu li {
+  .menu__number {
+    background-color: #9356dc;
+    color: white;
+    border-radius: 50px;
+    width: 1.3rem;
+    height: 1.3rem;
     text-align: center;
+    margin: 0;
   }
-  .menu .button:active {
+  .menu__number--1 {
+    margin-left: -2.8rem;
+  }
+  .menu__number--2, .menu__number--3 {
+    margin-left: -3.2rem;
+  }
+  .menu__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    width: 320px;
+    margin: 0.8rem auto;
+    padding: 0.5rem;
+  }
+  .menu__list:active {
     background-color: #e4d5f6;
   }
-  .menu i {
+  .menu__list--word {
+    margin-right: 3rem;
+  }
+  .menu__icon {
     color: gray;
+    font-size: 1.2rem;
+    width: 15px;
+  }
+  .menu__icon--phone {
+    font-size: 1.4rem;
+  }
+  .menu__icon--list {
+    margin-left: -1rem;
+  }
+  .menu__icon--store {
+    margin-left: -1rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -290,29 +323,6 @@ a {
     font-weight: 510;
     padding: 16px;
     margin-bottom: 3rem;
-  }
-  .button--color {
-    background-color: #f2f2f2;
-    color: black;
-    width: 80%;
-    margin: 0.8rem 0;
-    width: 85%;
-    margin: 0.8rem auto;
-  }
-  .button--color:hover {
-    background-color: #ae80e5;
-  }
-  .button__icon {
-    margin-left: -2rem;
-  }
-  .button__icon:hover {
-    background-color: #9356dc;
-  }
-  .button__icon--list {
-    margin-left: -4rem;
-  }
-  .button__icon--store {
-    margin-left: -3rem;
   }
 
   .page button {
