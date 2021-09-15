@@ -11,7 +11,7 @@
 
 @mixin button {
   font-size: 0.9rem;
-  border-radius: 20px;
+  border-radius: 25px;
   border: none;
   box-shadow: 0 7px 10px 0 darken($color: white, $amount: 30%);
 }
