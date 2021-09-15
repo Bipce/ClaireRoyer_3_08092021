@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
@@ -11,3 +14,8 @@ body {
 a {
   text-decoration: none;
 }
+
+// animation coeur
+// background: -webkit-linear-gradient(#9356dc, #ff79da);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;

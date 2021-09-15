@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
@@ -27,277 +29,303 @@ a {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
+  header h1 {
+    margin: 0.8rem 0 0.5rem 0;
+    height: auto;
+  }
   header img {
     width: 50%;
   }
 
-  h1 {
+  .return-title {
     width: 100%;
+    margin: 1.5rem 0 0.8rem 0;
+  }
+  .return-title a {
+    text-decoration: none;
+    color: black;
+    vertical-align: super;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .return-title img {
+    margin-left: 2rem;
   }
 }
-i {
-  width: 25%;
-  font-size: 1.2rem;
-}
-
 .container header {
   text-align: center;
 }
 
-.city {
-  text-align: center;
-}
-.city__p {
-  background-color: #e6e6e6;
-  border-top: #d9d9d9 0.2rem solid;
-  padding: 1rem 0;
-  margin: 0;
-}
-.city i {
-  width: 10%;
-}
-.city span {
-  display: inline-block;
-  width: 50%;
-  margin-left: -30px;
-}
+@media screen and (max-width: 576px) {
+  .city {
+    text-align: center;
+  }
+  .city__p {
+    background-color: #e6e6e6;
+    border-top: #d9d9d9 0.2rem solid;
+    padding: 1rem 0;
+    margin: 0;
+  }
+  .city i {
+    width: 10%;
+  }
+  .city span {
+    display: inline-block;
+    width: 50%;
+    margin-left: -30px;
+  }
 
-.info-block {
-  background-color: #f2f2f2;
-  text-align: center;
+  .info-block {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  .info-block h2 {
+    padding-top: 2rem;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin: 0 3rem;
+  }
+  .info-block h3 {
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
 }
-.info-block h2 {
-  padding-top: 2rem;
-  font-weight: bolder;
-  font-size: 1.6rem;
-  margin-top: 0;
-  margin: 0 3rem;
+@media screen and (max-width: 576px) {
+  .card-image {
+    margin: 0 -18px;
+  }
+  .card-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 40vh;
+  }
 }
-.info-block h3 {
-  font-weight: normal;
-  font-size: 1.2rem;
+@media screen and (max-width: 576px) {
+  .menu h2 {
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .menu ol {
+    padding: 0;
+  }
+  .menu li {
+    text-align: center;
+  }
+  .menu .button:active {
+    background-color: #e4d5f6;
+  }
+  .menu i {
+    color: gray;
+  }
 }
+@media screen and (max-width: 576px) {
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding-bottom: 3rem;
+  }
+  .restaurant h2 {
+    padding-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .restaurant a {
+    color: black;
+    height: 380px;
+  }
+  .restaurant__card {
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .restaurant__card figure {
+    padding-bottom: 0.1rem;
+  }
+  .restaurant__card--new {
+    background-color: #a6deb5;
+    color: #246134;
+    width: 15%;
+    padding: 0.2rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .restaurant__card--size {
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0 0 1rem 0.3rem;
+  }
+  .restaurant article {
+    position: relative;
+    box-shadow: 0 7px 10px 0 #cccccc;
+    margin-bottom: 1rem;
+  }
+  .restaurant article h2 {
+    font-size: 1rem;
+    padding: 0 0 0 0.3rem;
+    margin: 0.5rem;
+  }
+  .restaurant button {
+    border: none;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+    background-color: white;
+  }
+  .restaurant button:active {
+    background-color: #9356dc;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card-image {
+    margin: 0;
+  }
 
-.card-image {
-  margin: 0 -18px;
-}
-.card-image img {
-  object-fit: cover;
-  width: 100%;
-  height: 40vh;
-}
-
-.menu h2 {
-  font-weight: 600;
-  margin-top: 2.5rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-.menu ol {
-  padding: 0;
-}
-.menu li {
-  text-align: center;
-}
-.menu .button:active {
-  background-color: #e4d5f6;
-}
-.menu i {
-  color: gray;
-}
-
-.restaurant {
-  display: flex;
-  flex-direction: column;
-  background-color: #f2f2f2;
-  padding-bottom: 3rem;
-}
-.restaurant h2 {
-  padding-top: 2rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-.restaurant a {
-  color: black;
-  height: 380px;
-}
-.restaurant__card {
-  background-color: white;
-  border-radius: 20px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-.restaurant__card figure {
-  padding-bottom: 0.1rem;
-}
-.restaurant__card--new {
-  background-color: #a6deb5;
-  color: #246134;
-  width: 15%;
-  padding: 0.2rem;
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  font-size: 0.8rem;
-}
-.restaurant__card--size {
-  font-size: 1rem;
-  margin: 0.5rem;
-  padding: 0 0 1rem 0.3rem;
-}
-.restaurant article {
-  position: relative;
-  box-shadow: 0 7px 10px 0 #cccccc;
-  margin-bottom: 1rem;
-}
-.restaurant article h2 {
-  font-size: 1rem;
-  padding: 0 0 0 0.3rem;
-  margin: 0.5rem;
-}
-.restaurant button {
-  border: none;
-  position: absolute;
-  bottom: 1.5rem;
-  right: 1rem;
-  background-color: white;
-}
-.restaurant button:active {
-  background-color: #9356dc;
-}
-
-.page {
-  margin-top: -3.2rem;
-  border-radius: 40px;
-  background-color: white;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.page__title {
-  width: 85%;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  font-size: 2rem;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2rem;
-}
-.page__title i {
-  text-align: center;
-}
-.page .block {
-  width: 100%;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-.page .block h3 {
-  text-transform: uppercase;
-  font-weight: normal;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-.page .block__card {
-  width: 85%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 0 1rem;
-  box-shadow: 0 7px 15px 0 #cccccc;
-  border-radius: 20px;
-  margin: 1.5rem auto;
-  padding: 1rem;
-}
-.page .block__card h4,
+  .page {
+    margin-top: -3.2rem;
+    border-radius: 40px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page__title {
+    width: 90%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+  .page__title i {
+    text-align: right;
+    font-size: 1.5rem;
+    width: 10%;
+    margin: auto;
+  }
+  .page .block {
+    width: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .page .block h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .page .block__card {
+    width: 85%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    box-shadow: 0 7px 15px 0 #cccccc;
+    border-radius: 20px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+  }
+  .page .block__card h4,
 .page .block__card p {
-  margin-top: 0.1rem;
-  margin-bottom: 0rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0rem;
+  }
+  .page .block h4 {
+    font-size: 1.2rem;
+  }
+  .page .price {
+    font-weight: bold;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
 }
-.page .block h4 {
-  font-size: 1.2rem;
+@media screen and (max-width: 576px) {
+  footer {
+    background-color: #333333;
+    color: white;
+    padding: 1rem 0;
+  }
+  footer h2 {
+    margin: 0;
+    font-family: "Shrikhand", cursive;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+  }
+  footer ul {
+    padding: 0;
+  }
+  footer li {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  footer i {
+    width: 8%;
+    font-size: 0.8rem;
+  }
+  footer a {
+    color: white;
+  }
 }
-.page .price {
-  font-weight: bold;
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-}
+@media screen and (max-width: 576px) {
+  .button {
+    font-size: 0.9rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 7px 10px 0 #b3b3b3;
+    background-color: #bc95e9;
+    color: white;
+    font-weight: 510;
+    padding: 16px;
+    margin-bottom: 3rem;
+  }
+  .button--color {
+    background-color: #f2f2f2;
+    color: black;
+    width: 80%;
+    margin: 0.8rem 0;
+    width: 85%;
+    margin: 0.8rem auto;
+  }
+  .button--color:hover {
+    background-color: #ae80e5;
+  }
+  .button__icon {
+    margin-left: -2rem;
+  }
+  .button__icon:hover {
+    background-color: #9356dc;
+  }
+  .button__icon--list {
+    margin-left: -4rem;
+  }
+  .button__icon--store {
+    margin-left: -3rem;
+  }
 
-footer {
-  background-color: #333333;
-  color: white;
-  padding: 1rem 0;
-}
-footer h2 {
-  margin: 0;
-  font-family: "Shrikhand", cursive;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  font-size: 1rem;
-}
-footer ul {
-  padding: 0;
-}
-footer li {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  font-size: 1rem;
-  list-style: none;
-  margin-bottom: 0.5rem;
-}
-footer i {
-  width: 8%;
-  font-size: 0.8rem;
-}
-footer a {
-  color: white;
-}
-
-.button {
-  font-size: 0.9rem;
-  border-radius: 20px;
-  border: none;
-  box-shadow: 0 7px 10px 0 #b3b3b3;
-  background-color: #bc95e9;
-  color: white;
-  font-weight: 510;
-  padding: 16px;
-  margin-bottom: 3rem;
-}
-.button--color {
-  background-color: #f2f2f2;
-  color: black;
-  width: 80%;
-  margin: 0.8rem 0;
-  width: 85%;
-  margin: 0.8rem auto;
-}
-.button--color:hover {
-  background-color: #ae80e5;
-}
-.button__icon {
-  margin-left: -2rem;
-}
-.button__icon:hover {
-  background-color: #9356dc;
-}
-.button__icon--list {
-  margin-left: -4rem;
-}
-.button__icon--store {
-  margin-left: -3rem;
-}
-
-.page button {
-  border-radius: 30px;
-  border: none;
-  padding: 1rem 3rem;
-  color: white;
-  background-color: #9356dc;
-  font-size: 1rem;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
+  .page button {
+    border-radius: 30px;
+    border: none;
+    padding: 1rem 3rem;
+    color: white;
+    background-color: #9356dc;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
