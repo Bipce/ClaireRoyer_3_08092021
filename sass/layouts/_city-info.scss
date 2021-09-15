@@ -1,15 +1,11 @@
 @include mobile-only {
   .city {
+    background-color: darken($color: white, $amount: 10%);
+    border-top: darken($color: white, $amount: 15%) 0.2rem solid;
+    padding: 1rem 0;
+    margin: 0;
     text-align: center;
-    &__p {
-      background-color: darken($color: white, $amount: 10%);
-      border-top: darken($color: white, $amount: 15%) 0.2rem solid;
-      padding: 1rem 0;
-      margin: 0;
-    }
-    i {
-      width: 10%;
-    }
+
     span {
       display: inline-block;
       width: 50%;

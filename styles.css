@@ -59,16 +59,11 @@ a {
 
 @media screen and (max-width: 576px) {
   .city {
-    text-align: center;
-  }
-  .city__p {
     background-color: #e6e6e6;
     border-top: #d9d9d9 0.2rem solid;
     padding: 1rem 0;
     margin: 0;
-  }
-  .city i {
-    width: 10%;
+    text-align: center;
   }
   .city span {
     display: inline-block;
