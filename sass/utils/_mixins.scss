@@ -4,6 +4,12 @@
   }
 }
 
+@mixin small-to-large {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
 @mixin margin {
   margin-left: 1.5rem;
   margin-right: 1.5rem;

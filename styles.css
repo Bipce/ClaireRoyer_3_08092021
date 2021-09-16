@@ -14,16 +14,28 @@ a {
   text-decoration: none;
 }
 
-.restaurant__card figure {
-  margin: 0;
+@media screen and (max-width: 576px) {
+  .restaurant__card figure {
+    margin: 0;
+  }
+  .restaurant__card img {
+    object-fit: cover;
+    width: 100%;
+    height: 20vh;
+    border-radius: 20px 20px 0 0;
+  }
 }
-.restaurant__card img {
-  object-fit: cover;
-  width: 100%;
-  height: 20vh;
-  border-radius: 20px 20px 0 0;
+@media screen and (max-width: 992px) {
+  .restaurant__card figure {
+    margin: 0;
+  }
+  .restaurant__card img {
+    object-fit: cover;
+    width: 100%;
+    height: 20vh;
+    border-radius: 20px 20px 0 0;
+  }
 }
-
 @media screen and (max-width: 576px) {
   header {
     margin-left: 1.5rem;
@@ -57,6 +69,30 @@ a {
   text-align: center;
 }
 
+@media screen and (max-width: 992px) {
+  header h1 {
+    margin: 0.5rem auto;
+  }
+  header img {
+    width: 40%;
+  }
+}
+.return-title {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0 0.8rem 0;
+}
+.return-title a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+}
+.return-title img {
+  margin: auto;
+}
+
 @media screen and (max-width: 576px) {
   .city {
     background-color: #e6e6e6;
@@ -88,6 +124,16 @@ a {
   }
 }
 @media screen and (max-width: 576px) {
+  .card-image {
+    margin: 0 -18px;
+  }
+  .card-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 992px) {
   .card-image {
     margin: 0 -18px;
   }

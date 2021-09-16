@@ -31,3 +31,28 @@
     text-align: center;
   }
 }
+
+@include small-to-large {
+  header {
+    h1 {
+      margin: 0.5rem auto;
+    }
+    img {
+      width: 40%;
+    }
+  }
+}
+.return-title {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0 0.8rem 0;
+  a {
+    text-decoration: none;
+    color: black;
+    @include margin;
+    font-size: 1.5rem;
+  }
+  img {
+    margin: auto;
+  }
+}
