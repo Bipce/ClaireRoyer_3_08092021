@@ -98,6 +98,9 @@ a {
   }
 }
 @media screen and (max-width: 576px) {
+  .menu {
+    margin-bottom: 4rem;
+  }
   .menu h2 {
     font-weight: 600;
     margin-top: 2.5rem;
@@ -117,8 +120,7 @@ a {
   .menu__number--1 {
     margin-left: -1.8rem;
   }
-  .menu__number--2,
-  .menu__number--3 {
+  .menu__number--2, .menu__number--3 {
     margin-left: -2rem;
   }
   .menu__list {
@@ -128,8 +130,10 @@ a {
     background-color: #f2f2f2;
     border-radius: 25px;
     width: 320px;
-    margin: 0.8rem auto;
+    margin: 1.2rem auto;
     padding: 0.5rem;
+    box-shadow: 0 7px 10px 0 #d9d9d9;
+    cursor: pointer;
   }
   .menu__list:active {
     background-color: #e4d5f6;
@@ -258,8 +262,13 @@ a {
   .page .dishes h3 {
     text-transform: uppercase;
     font-weight: normal;
+    margin-bottom: 0.5rem;
+  }
+  .page .dishes__bar {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    border-bottom: 0.2rem solid #99e2d0;
+    width: 3rem;
   }
   .page .dishes__card {
     width: 85%;
@@ -273,7 +282,7 @@ a {
     padding: 1rem;
   }
   .page .dishes__card h4,
-  .page .dishes__card p {
+.page .dishes__card p {
     margin-top: 0.1rem;
     margin-bottom: 0rem;
   }
@@ -320,6 +329,7 @@ a {
 }
 @media screen and (max-width: 576px) {
   .button {
+    cursor: pointer;
     font-size: 0.9rem;
     border-radius: 25px;
     border: none;

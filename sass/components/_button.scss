@@ -1,5 +1,6 @@
 @include mobile-only {
   .button {
+    cursor: pointer;
     @include button;
     background: linear-gradient($color-primary, $color-secondary);
     color: white;

@@ -25,13 +25,18 @@
         margin: auto;
       }
     }
-    .block {
+    .dishes {
       width: 100%;
       @include margin;
       h3 {
         text-transform: uppercase;
         font-weight: normal;
+        margin-bottom: 0.5rem;
+      }
+      &__bar {
         @include margin;
+        border-bottom: 0.2rem solid $color-tertiary;
+        width: 3rem;
       }
       &__card {
         width: 85%;
