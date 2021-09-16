@@ -93,34 +93,51 @@ a {
   margin: auto;
 }
 
+.city {
+  background-color: #e6e6e6;
+  border-top: #d9d9d9 0.2rem solid;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0;
+}
+.city span {
+  display: inline-block;
+  width: 50%;
+}
+
+.info-block {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+.info-block h2 {
+  font-weight: bolder;
+}
+.info-block h3 {
+  font-weight: normal;
+}
+
 @media screen and (max-width: 576px) {
-  .city {
-    background-color: #e6e6e6;
-    border-top: #d9d9d9 0.2rem solid;
-    padding: 1rem 0;
-    margin: 0;
-    text-align: center;
-  }
   .city span {
-    display: inline-block;
-    width: 50%;
     margin-left: -30px;
   }
 
-  .info-block {
-    background-color: #f2f2f2;
-    text-align: center;
-  }
   .info-block h2 {
     padding-top: 2rem;
-    font-weight: bolder;
     font-size: 1.6rem;
     margin-top: 0;
     margin: 0 3rem;
   }
   .info-block h3 {
-    font-weight: normal;
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .info-block {
+    padding-top: 2rem;
+  }
+
+  h3 {
+    margin-bottom: 3rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -373,20 +390,20 @@ a {
     color: white;
   }
 }
-@media screen and (max-width: 576px) {
-  .button {
-    cursor: pointer;
-    font-size: 0.9rem;
-    border-radius: 25px;
-    border: none;
-    box-shadow: 0 7px 10px 0 #b3b3b3;
-    background: linear-gradient(#9356dc, #ff79da);
-    color: white;
-    font-weight: 510;
-    padding: 16px;
-    margin-bottom: 3rem;
-  }
+.button {
+  cursor: pointer;
+  background: linear-gradient(#9356dc, #ff79da);
+  font-size: 0.9rem;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 7px 10px 0 #b3b3b3;
+  color: white;
+  font-weight: 510;
+  padding: 16px;
+  margin-bottom: 3rem;
+}
 
+@media screen and (max-width: 576px) {
   .page button {
     border-radius: 30px;
     border: none;

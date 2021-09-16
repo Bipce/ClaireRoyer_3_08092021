@@ -1,14 +1,14 @@
-@include mobile-only {
-  .button {
-    cursor: pointer;
-    @include button;
-    background: linear-gradient($color-primary, $color-secondary);
-    color: white;
-    font-weight: 510;
-    padding: 16px;
-    margin-bottom: 3rem;
-  }
+.button {
+  cursor: pointer;
+  background: linear-gradient($color-primary, $color-secondary);
+  @include button;
+  color: white;
+  font-weight: 510;
+  padding: 16px;
+  margin-bottom: 3rem;
+}
 
+@include mobile-only {
   .page button {
     border-radius: 30px;
     border: none;
