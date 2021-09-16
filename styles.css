@@ -117,7 +117,8 @@ a {
   .menu__number--1 {
     margin-left: -1.8rem;
   }
-  .menu__number--2, .menu__number--3 {
+  .menu__number--2,
+  .menu__number--3 {
     margin-left: -2rem;
   }
   .menu__list {
@@ -249,18 +250,18 @@ a {
     width: 10%;
     margin: auto;
   }
-  .page .block {
+  .page .dishes {
     width: 100%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
-  .page .block h3 {
+  .page .dishes h3 {
     text-transform: uppercase;
     font-weight: normal;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
-  .page .block__card {
+  .page .dishes__card {
     width: 85%;
     position: relative;
     display: flex;
@@ -271,12 +272,12 @@ a {
     margin: 1.5rem auto;
     padding: 1rem;
   }
-  .page .block__card h4,
-.page .block__card p {
+  .page .dishes__card h4,
+  .page .dishes__card p {
     margin-top: 0.1rem;
     margin-bottom: 0rem;
   }
-  .page .block h4 {
+  .page .dishes h4 {
     font-size: 1.2rem;
   }
   .page .price {
