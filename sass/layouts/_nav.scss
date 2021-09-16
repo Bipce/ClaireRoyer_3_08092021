@@ -1,20 +1,45 @@
+.menu {
+  margin-bottom: 4rem;
+  & h2 {
+    @include margin;
+    font-weight: 600;
+    margin-top: 2.5rem;
+  }
+  &__number {
+    background-color: $color-primary;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  &__list {
+    background-color: $bg-color;
+    box-shadow: 0 7px 10px 0 darken($color: white, $amount: 15%);
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    border-radius: 25px;
+    padding: 0.5rem;
+    cursor: pointer;
+    &--word {
+      font-weight: bold;
+      margin-right: 2.5rem;
+      width: 190px;
+    }
+  }
+  &__icon {
+    color: darken($color: white, $amount: 50%);
+    font-size: 1.2rem;
+    width: 25px;
+  }
+  &__number {
+    width: 20px;
+  }
+}
 @include mobile-only {
   .menu {
-    margin-bottom: 4rem;
-    & h2 {
-      font-weight: 600;
-      margin-top: 2.5rem;
-      @include margin;
-    }
     &__number {
-      background-color: $color-primary;
-      color: white;
-      border-radius: 50px;
-      width: 1.3rem;
-      height: 1.3rem;
-      text-align: center;
-      margin: 0;
-      width: 20px;
       &--1 {
         margin-left: -1.8rem;
       }
@@ -24,16 +49,8 @@
       }
     }
     &__list {
-      display: flex;
-      justify-content: space-around;
-      align-items: baseline;
-      background-color: $bg-color;
-      border-radius: 25px;
-      width: 320px;
       margin: 1.2rem auto;
-      padding: 0.5rem;
-      box-shadow: 0 7px 10px 0 darken($color: white, $amount: 15%);
-      cursor: pointer;
+      width: 320px;
       &:active {
         background-color: lighten($color: $color-primary, $amount: 30%);
         .menu__icon {
@@ -44,20 +61,30 @@
           -webkit-text-fill-color: transparent;
         }
       }
-      &--word {
-        margin-right: 2.5rem;
-        width: 190px;
-        font-weight: bold;
+    }
+  }
+}
+@include small-to-large {
+  .menu {
+    flex-direction: row;
+    &__list {
+      position: relative;
+      width: 90%;
+      margin: 1.2rem auto;
+      &:active {
+        background-color: lighten($color: $color-primary, $amount: 30%);
+        .menu__icon {
+          background-color: $color-primary;
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       }
     }
-    &__icon {
-      color: darken($color: white, $amount: 50%);
-      font-size: 1.2rem;
-      width: 25px;
-      &:active {
-        background-color: $color-primary;
-        color: transparent;
-      }
+    &__number {
+      position: absolute;
+      left: -0.7rem;
     }
   }
 }

@@ -4,6 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   margin: 0;
+  min-width: 365px;
 }
 
 .page__title {
@@ -25,7 +26,7 @@ a {
     border-radius: 20px 20px 0 0;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
   .restaurant__card figure {
     margin: 0;
   }
@@ -69,7 +70,7 @@ a {
   text-align: center;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
   header h1 {
     margin: 0.5rem auto;
   }
@@ -131,7 +132,7 @@ a {
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
   .info-block {
     padding-top: 2rem;
   }
@@ -150,7 +151,7 @@ a {
     height: 40vh;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
   .card-image {
     margin: 0 -18px;
   }
@@ -160,26 +161,48 @@ a {
     height: 40vh;
   }
 }
+.menu {
+  margin-bottom: 4rem;
+}
+.menu h2 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+.menu__number {
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.menu__list {
+  background-color: #f2f2f2;
+  box-shadow: 0 7px 10px 0 #d9d9d9;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  border-radius: 25px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.menu__list--word {
+  font-weight: bold;
+  margin-right: 2.5rem;
+  width: 190px;
+}
+.menu__icon {
+  color: gray;
+  font-size: 1.2rem;
+  width: 25px;
+}
+.menu__number {
+  width: 20px;
+}
+
 @media screen and (max-width: 576px) {
-  .menu {
-    margin-bottom: 4rem;
-  }
-  .menu h2 {
-    font-weight: 600;
-    margin-top: 2.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-  .menu__number {
-    background-color: #9356dc;
-    color: white;
-    border-radius: 50px;
-    width: 1.3rem;
-    height: 1.3rem;
-    text-align: center;
-    margin: 0;
-    width: 20px;
-  }
   .menu__number--1 {
     margin-left: -1.8rem;
   }
@@ -187,16 +210,8 @@ a {
     margin-left: -2rem;
   }
   .menu__list {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    background-color: #f2f2f2;
-    border-radius: 25px;
-    width: 320px;
     margin: 1.2rem auto;
-    padding: 0.5rem;
-    box-shadow: 0 7px 10px 0 #d9d9d9;
-    cursor: pointer;
+    width: 320px;
   }
   .menu__list:active {
     background-color: #e4d5f6;
@@ -208,19 +223,29 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .menu__list--word {
-    margin-right: 2.5rem;
-    width: 190px;
-    font-weight: bold;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .menu {
+    flex-direction: row;
   }
-  .menu__icon {
-    color: gray;
-    font-size: 1.2rem;
-    width: 25px;
+  .menu__list {
+    position: relative;
+    width: 90%;
+    margin: 1.2rem auto;
   }
-  .menu__icon:active {
+  .menu__list:active {
+    background-color: #e4d5f6;
+  }
+  .menu__list:active .menu__icon {
     background-color: #9356dc;
     color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .menu__number {
+    position: absolute;
+    left: -0.7rem;
   }
 }
 @media screen and (max-width: 576px) {

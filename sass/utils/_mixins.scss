@@ -5,7 +5,7 @@
 }
 
 @mixin small-to-large {
-  @media screen and (max-width: 992px) {
+  @media screen and (min-width: 577px) and (max-width: 992px) {
     @content;
   }
 }
