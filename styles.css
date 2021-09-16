@@ -112,12 +112,13 @@ a {
     height: 1.3rem;
     text-align: center;
     margin: 0;
+    width: 20px;
   }
   .menu__number--1 {
-    margin-left: -2.8rem;
+    margin-left: -1.8rem;
   }
   .menu__number--2, .menu__number--3 {
-    margin-left: -3.2rem;
+    margin-left: -2rem;
   }
   .menu__list {
     display: flex;
@@ -132,22 +133,26 @@ a {
   .menu__list:active {
     background-color: #e4d5f6;
   }
+  .menu__list:active .menu__icon {
+    background-color: #9356dc;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .menu__list--word {
-    margin-right: 3rem;
+    margin-right: 2.5rem;
+    width: 190px;
+    font-weight: bold;
   }
   .menu__icon {
     color: gray;
     font-size: 1.2rem;
-    width: 15px;
+    width: 25px;
   }
-  .menu__icon--phone {
-    font-size: 1.4rem;
-  }
-  .menu__icon--list {
-    margin-left: -1rem;
-  }
-  .menu__icon--store {
-    margin-left: -1rem;
+  .menu__icon:active {
+    background-color: #9356dc;
+    color: transparent;
   }
 }
 @media screen and (max-width: 576px) {

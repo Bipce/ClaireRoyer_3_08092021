@@ -13,12 +13,13 @@
       height: 1.3rem;
       text-align: center;
       margin: 0;
+      width: 20px;
       &--1 {
-        margin-left: -2.8rem;
+        margin-left: -1.8rem;
       }
       &--2,
       &--3 {
-        margin-left: -3.2rem;
+        margin-left: -2rem;
       }
     }
     &__list {
@@ -32,23 +33,27 @@
       padding: 0.5rem;
       &:active {
         background-color: lighten($color: $color-primary, $amount: 30%);
+        .menu__icon {
+          background-color: $color-primary;
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       }
       &--word {
-        margin-right: 3rem;
+        margin-right: 2.5rem;
+        width: 190px;
+        font-weight: bold;
       }
     }
     &__icon {
       color: darken($color: white, $amount: 50%);
       font-size: 1.2rem;
-      width: 15px;
-      &--phone {
-        font-size: 1.4rem;
-      }
-      &--list {
-        margin-left: -1rem;
-      }
-      &--store {
-        margin-left: -1rem;
+      width: 25px;
+      &:active {
+        background-color: $color-primary;
+        color: transparent;
       }
     }
   }
