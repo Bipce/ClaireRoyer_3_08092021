@@ -1,29 +1,46 @@
+.restaurant {
+  display: flex;
+  background-color: $bg-color;
+  & h2 {
+    padding-top: 2rem;
+  }
+  & a {
+    color: black;
+  }
+  &__card {
+    box-shadow: 0 7px 10px 0 darken($color: white, $amount: 20%);
+    background-color: white;
+    border-radius: 20px;
+    figure {
+      padding-bottom: 0.1rem;
+    }
+    &--new {
+      background-color: $bg-color-new;
+      color: $color-txt-new;
+      padding: 0.2rem;
+    }
+    &--size {
+      padding: 0 0 1rem 0.3rem;
+    }
+  }
+}
+
 @include mobile-only {
   .restaurant {
-    display: flex;
     flex-direction: column;
-    background-color: $bg-color;
     padding-bottom: 3rem;
     & h2 {
-      padding-top: 2rem;
       @include margin;
     }
     & a {
-      color: black;
       height: 380px;
     }
     &__card {
-      background-color: white;
-      border-radius: 20px;
+      position: relative;
+      margin-bottom: 1rem;
       @include margin;
-      figure {
-        padding-bottom: 0.1rem;
-      }
       &--new {
-        background-color: $bg-color-new;
-        color: $color-txt-new;
         width: 15%;
-        padding: 0.2rem;
         position: absolute;
         top: 0.5rem;
         right: 0.5rem;
@@ -32,32 +49,69 @@
       &--size {
         font-size: 1rem;
         margin: 0.5rem;
-        padding: 0 0 1rem 0.3rem;
       }
-    }
-    & article {
-      position: relative;
-      box-shadow: 0 7px 10px 0 darken($color: white, $amount: 20%);
-      margin-bottom: 1rem;
-
       & h2 {
         font-size: 1rem;
         padding: 0 0 0 0.3rem;
         margin: 0.5rem;
       }
+      & i {
+        position: absolute;
+        font-size: 1.5rem;
+        bottom: 2rem;
+        right: 1rem;
+        &:active {
+          background: -webkit-linear-gradient(#9356dc, #ff79da);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: bold;
+          transition: 0.2s;
+        }
+      }
     }
-    & i {
-      font-size: 1.5rem;
-      position: absolute;
-      bottom: 2rem;
-      right: 1rem;
-      &:active {
-        background: -webkit-linear-gradient(#9356dc, #ff79da);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: bold;
-        transition: 0.2s;
+  }
+}
+
+@include small-to-large {
+  .restaurant {
+    position: relative;
+    flex-wrap: wrap;
+    & h2 {
+      @include margin;
+      width: 100%;
+    }
+    &__card {
+      position: relative;
+      width: 45%;
+      margin: 1rem auto;
+      & h2 {
+        margin: 0.5rem;
+        padding-top: 0.5rem;
+      }
+      &--size {
+        margin: 0.5rem;
+      }
+      & i {
+        position: absolute;
+        right: 1rem;
+        bottom: 2rem;
+        font-size: 1.5rem;
+        &:active {
+          background: -webkit-linear-gradient(#9356dc, #ff79da);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: bold;
+          transition: 0.2s;
+        }
+      }
+      &--new {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 4.5rem;
+        text-align: center;
       }
     }
   }

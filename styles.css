@@ -248,36 +248,53 @@ a {
     left: -0.7rem;
   }
 }
+.restaurant {
+  display: flex;
+  background-color: #f2f2f2;
+}
+.restaurant h2 {
+  padding-top: 2rem;
+}
+.restaurant a {
+  color: black;
+}
+.restaurant__card {
+  box-shadow: 0 7px 10px 0 #cccccc;
+  background-color: white;
+  border-radius: 20px;
+}
+.restaurant__card figure {
+  padding-bottom: 0.1rem;
+}
+.restaurant__card--new {
+  background-color: #99e2d0;
+  color: #008766;
+  padding: 0.2rem;
+}
+.restaurant__card--size {
+  padding: 0 0 1rem 0.3rem;
+}
+
 @media screen and (max-width: 576px) {
   .restaurant {
-    display: flex;
     flex-direction: column;
-    background-color: #f2f2f2;
     padding-bottom: 3rem;
   }
   .restaurant h2 {
-    padding-top: 2rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
   .restaurant a {
-    color: black;
     height: 380px;
   }
   .restaurant__card {
-    background-color: white;
-    border-radius: 20px;
+    position: relative;
+    margin-bottom: 1rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
-  .restaurant__card figure {
-    padding-bottom: 0.1rem;
-  }
   .restaurant__card--new {
-    background-color: #99e2d0;
-    color: #008766;
     width: 15%;
-    padding: 0.2rem;
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
@@ -286,31 +303,69 @@ a {
   .restaurant__card--size {
     font-size: 1rem;
     margin: 0.5rem;
-    padding: 0 0 1rem 0.3rem;
   }
-  .restaurant article {
-    position: relative;
-    box-shadow: 0 7px 10px 0 #cccccc;
-    margin-bottom: 1rem;
-  }
-  .restaurant article h2 {
+  .restaurant__card h2 {
     font-size: 1rem;
     padding: 0 0 0 0.3rem;
     margin: 0.5rem;
   }
-  .restaurant i {
-    font-size: 1.5rem;
+  .restaurant__card i {
     position: absolute;
+    font-size: 1.5rem;
     bottom: 2rem;
     right: 1rem;
   }
-  .restaurant i:active {
+  .restaurant__card i:active {
     background: -webkit-linear-gradient(#9356dc, #ff79da);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     transition: 0.2s;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .restaurant {
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .restaurant h2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 100%;
+  }
+  .restaurant__card {
+    position: relative;
+    width: 45%;
+    margin: 1rem auto;
+  }
+  .restaurant__card h2 {
+    margin: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .restaurant__card--size {
+    margin: 0.5rem;
+  }
+  .restaurant__card i {
+    position: absolute;
+    right: 1rem;
+    bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .restaurant__card i:active {
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  .restaurant__card--new {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 4.5rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 576px) {
