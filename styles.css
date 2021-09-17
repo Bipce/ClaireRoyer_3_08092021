@@ -341,7 +341,7 @@ a {
   }
   .restaurant__card h2 {
     margin: 0.5rem;
-    padding-top: 0.5rem;
+    padding: 0.5rem 0 0 0.3rem;
   }
   .restaurant__card--size {
     margin: 0.5rem;
@@ -368,33 +368,64 @@ a {
     text-align: center;
   }
 }
-@media screen and (max-width: 576px) {
-  .card-image {
-    margin: 0;
-  }
+.card-image {
+  margin: 0;
+}
 
+.page {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.page__title {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 2rem;
+}
+.page__title i {
+  width: 10%;
+  text-align: right;
+}
+.page .dishes h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+.page .dishes__bar {
+  border-bottom: 0.2rem solid #99e2d0;
+}
+.page .dishes__card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 7px 15px 0 #cccccc;
+  border-radius: 20px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+.page .dishes__card h4,
+.page .dishes__card p {
+  margin-top: 0.1rem;
+  margin-bottom: 0rem;
+}
+.page .dishes__card .price {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
   .page {
     margin-top: -3.2rem;
     border-radius: 40px;
-    background-color: white;
     position: relative;
-    display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .page__title {
-    width: 90%;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
     font-size: 1.8rem;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2rem;
   }
   .page__title i {
-    text-align: right;
     font-size: 1.5rem;
-    width: 10%;
     margin: auto;
   }
   .page .dishes {
@@ -402,41 +433,79 @@ a {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
-  .page .dishes h3 {
-    text-transform: uppercase;
-    font-weight: normal;
-    margin-bottom: 0.5rem;
-  }
   .page .dishes__bar {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    border-bottom: 0.2rem solid #99e2d0;
     width: 3rem;
   }
   .page .dishes__card {
     width: 85%;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 0 1rem;
-    box-shadow: 0 7px 15px 0 #cccccc;
-    border-radius: 20px;
-    margin: 1.5rem auto;
     padding: 1rem;
   }
-  .page .dishes__card h4,
-.page .dishes__card p {
-    margin-top: 0.1rem;
-    margin-bottom: 0rem;
+  .page .dishes__card--meal {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 88%;
   }
   .page .dishes h4 {
     font-size: 1.2rem;
   }
   .page .price {
-    font-weight: bold;
     position: absolute;
     right: 1rem;
     bottom: 1rem;
+    width: 27px !important;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .page {
+    position: relative;
+    margin-top: -3.2rem;
+    border-radius: 40px;
+    flex-wrap: wrap;
+  }
+  .page__title {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  .dishes {
+    margin: auto;
+    width: 30%;
+  }
+  .dishes__bar {
+    width: 3rem;
+  }
+  .dishes__bar--title {
+    margin-top: -5rem;
+  }
+  .dishes h3 {
+    width: 100%;
+  }
+  .dishes__card {
+    text-align: center;
+  }
+  .dishes__card p, .dishes__card h4 {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 88%;
+  }
+  .dishes__card h4 {
+    padding-top: 0.5rem;
+  }
+
+  .price {
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+
+  .button {
+    margin: auto;
   }
 }
 footer {
