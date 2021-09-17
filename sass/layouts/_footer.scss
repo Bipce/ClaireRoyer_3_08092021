@@ -1,29 +1,44 @@
+footer {
+  background-color: darken($color: white, $amount: 80%);
+  color: white;
+  padding: 1rem 0;
+  & h2 {
+    margin: 0;
+    font-family: "Shrikhand", cursive;
+    @include margin;
+  }
+  & ul {
+    padding: 0;
+  }
+  & li {
+    @include margin;
+    font-size: 1rem;
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  & a {
+    color: white;
+  }
+}
+
 @include mobile-only {
   footer {
-    background-color: darken($color: white, $amount: 80%);
-    color: white;
-    padding: 1rem 0;
     & h2 {
-      margin: 0;
-      font-family: "Shrikhand", cursive;
-      @include margin;
       font-size: 1rem;
-    }
-    & ul {
-      padding: 0;
-    }
-    & li {
-      @include margin;
-      font-size: 1rem;
-      list-style: none;
-      margin-bottom: 0.5rem;
     }
     & i {
       width: 8%;
       font-size: 0.8rem;
     }
-    & a {
-      color: white;
+  }
+}
+@include small-to-large {
+  footer {
+    & h2 {
+      font-size: 1.2rem;
+    }
+    & i {
+      width: 2rem;
     }
   }
 }
