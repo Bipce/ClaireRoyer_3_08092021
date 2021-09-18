@@ -20,3 +20,8 @@
     margin-top: 2rem;
   }
 }
+@include small-to-large {
+  .page button {
+    width: 170px;
+  }
+}
