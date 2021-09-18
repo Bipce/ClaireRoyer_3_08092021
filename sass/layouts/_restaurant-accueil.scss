@@ -116,3 +116,51 @@
     }
   }
 }
+
+@include large-screen {
+  .restaurant {
+    position: relative;
+    flex-wrap: wrap;
+    & h2 {
+      @include margin;
+      width: 100%;
+      top: 0;
+    }
+    &__card {
+      position: relative;
+      width: 45%;
+      max-width: 600px;
+      margin: 1rem auto;
+      & h2 {
+        margin: 0.5rem;
+        padding: 0.5rem 0 0 0.3rem;
+        font-size: 1.6rem;
+      }
+      &--size {
+        margin: 0.5rem;
+        font-size: 1.2rem;
+      }
+      & i {
+        position: absolute;
+        right: 1rem;
+        bottom: 2.5rem;
+        font-size: 1.5rem;
+        &:hover {
+          background: -webkit-linear-gradient(#9356dc, #ff79da);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: bold;
+          transition: 0.2s;
+        }
+      }
+      &--new {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 4.5rem;
+        text-align: center;
+      }
+    }
+  }
+}

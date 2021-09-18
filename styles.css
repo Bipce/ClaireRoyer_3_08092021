@@ -291,6 +291,7 @@ a {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     width: 30%;
+    max-width: 450px;
   }
   .menu__list--word {
     text-align: center;
@@ -411,6 +412,54 @@ a {
     font-size: 1.5rem;
   }
   .restaurant__card i:active {
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  .restaurant__card--new {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 4.5rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 993px) {
+  .restaurant {
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .restaurant h2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 100%;
+    top: 0;
+  }
+  .restaurant__card {
+    position: relative;
+    width: 45%;
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+  .restaurant__card h2 {
+    margin: 0.5rem;
+    padding: 0.5rem 0 0 0.3rem;
+    font-size: 1.6rem;
+  }
+  .restaurant__card--size {
+    margin: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .restaurant__card i {
+    position: absolute;
+    right: 1rem;
+    bottom: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .restaurant__card i:hover {
     background: -webkit-linear-gradient(#9356dc, #ff79da);
     background-clip: text;
     -webkit-background-clip: text;
