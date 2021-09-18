@@ -15,26 +15,28 @@ a {
   text-decoration: none;
 }
 
+.restaurant__card figure {
+  margin: 0;
+}
+.restaurant__card img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
 @media screen and (max-width: 576px) {
-  .restaurant__card figure {
-    margin: 0;
-  }
   .restaurant__card img {
-    object-fit: cover;
-    width: 100%;
     height: 20vh;
-    border-radius: 20px 20px 0 0;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  .restaurant__card figure {
-    margin: 0;
-  }
   .restaurant__card img {
-    object-fit: cover;
-    width: 100%;
     height: 20vh;
-    border-radius: 20px 20px 0 0;
+  }
+}
+@media screen and (min-width: 993px) {
+  .restaurant__card img {
+    height: 20vh;
   }
 }
 @media screen and (max-width: 576px) {
@@ -141,10 +143,11 @@ a {
     margin-bottom: 3rem;
   }
 }
+.card-image {
+  margin: 0 -18px;
+}
+
 @media screen and (max-width: 576px) {
-  .card-image {
-    margin: 0 -18px;
-  }
   .card-image img {
     object-fit: cover;
     width: 100%;
@@ -152,9 +155,6 @@ a {
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  .card-image {
-    margin: 0 -18px;
-  }
   .card-image img {
     object-fit: cover;
     width: 100%;
