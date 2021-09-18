@@ -268,6 +268,44 @@ a {
     left: -0.7rem;
   }
 }
+@media screen and (min-width: 993px) {
+  .info-block {
+    margin-bottom: 10rem;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .menu h2 {
+    width: 100%;
+    position: absolute;
+    bottom: 5rem;
+  }
+  .menu__icon {
+    text-align: end;
+    height: 20px;
+  }
+  .menu__list {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 30%;
+  }
+  .menu__list--word {
+    text-align: center;
+  }
+  .menu__list:hover {
+    background-color: #e4d5f6;
+  }
+  .menu__list:hover .menu__icon {
+    background-color: #9356dc;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 .restaurant {
   display: flex;
   background-color: #f2f2f2;

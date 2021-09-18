@@ -88,3 +88,39 @@
     }
   }
 }
+@include large-screen {
+  .info-block {
+    margin-bottom: 10rem;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    & h2 {
+      width: 100%;
+      position: absolute;
+      bottom: 5rem;
+    }
+    &__icon {
+      text-align: end;
+      height: 20px;
+    }
+    &__list {
+      @include margin;
+      width: 30%;
+      &--word {
+        text-align: center;
+      }
+      &:hover {
+        background-color: lighten($color: $color-primary, $amount: 30%);
+        .menu__icon {
+          background-color: $color-primary;
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+}
