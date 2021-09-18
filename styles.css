@@ -161,6 +161,12 @@ a {
     height: 40vh;
   }
 }
+@media screen and (min-width: 993px) {
+  .card-image img {
+    width: 100%;
+    height: 40vh;
+  }
+}
 .menu {
   margin-bottom: 4rem;
 }

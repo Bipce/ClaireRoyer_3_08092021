@@ -1,6 +1,9 @@
+.card-image {
+  margin: 0 -18px;
+}
+
 @include mobile-only {
   .card-image {
-    margin: 0 -18px;
     img {
       object-fit: cover;
       width: 100%;
@@ -11,9 +14,17 @@
 
 @include small-to-large {
   .card-image {
-    margin: 0 -18px;
     img {
       object-fit: cover;
+      width: 100%;
+      height: 40vh;
+    }
+  }
+}
+
+@include large-screen {
+  .card-image {
+    img {
       width: 100%;
       height: 40vh;
     }
