@@ -178,7 +178,7 @@ a {
 @media screen and (min-width: 993px) {
   .card-image img {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
   }
 }
 .menu {
@@ -615,6 +615,49 @@ a {
     margin: auto;
   }
 }
+@media screen and (min-width: 993px) {
+  .page {
+    position: relative;
+    margin-top: -5rem;
+    border-radius: 40px;
+    flex-wrap: wrap;
+  }
+  .page__title {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .dishes {
+    margin: auto;
+    width: 30%;
+  }
+  .dishes__bar {
+    width: 3rem;
+  }
+  .dishes__bar--title {
+    margin-top: -5rem;
+  }
+  .dishes__card {
+    text-align: center;
+  }
+  .dishes__card p, .dishes__card h4 {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+  }
+  .dishes__card h4 {
+    padding-top: 0.5rem;
+  }
+  .dishes .price {
+    padding-bottom: 0.5rem;
+  }
+
+  .button {
+    margin: auto;
+  }
+}
 footer {
   background-color: #333333;
   color: white;
@@ -657,6 +700,11 @@ footer a {
     width: 2rem;
   }
 }
+@media screen and (min-width: 993px) {
+  footer i {
+    width: 2rem;
+  }
+}
 .button {
   cursor: pointer;
   background: linear-gradient(#9356dc, #ff79da);
@@ -683,6 +731,11 @@ footer a {
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
+  .page button {
+    width: 170px;
+  }
+}
+@media screen and (min-width: 993px) {
   .page button {
     width: 170px;
   }

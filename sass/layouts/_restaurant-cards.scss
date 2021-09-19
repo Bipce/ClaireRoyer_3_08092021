@@ -134,3 +134,46 @@
     margin: auto;
   }
 }
+
+@include large-screen {
+  .page {
+    position: relative;
+    margin-top: -5rem;
+    border-radius: 40px;
+    flex-wrap: wrap;
+    &__title {
+      width: 100%;
+      font-size: 2rem;
+    }
+  }
+  .dishes {
+    margin: auto;
+    width: 30%;
+    &__bar {
+      width: 3rem;
+      &--title {
+        margin-top: -5rem;
+      }
+    }
+    &__card {
+      text-align: center;
+      & p,
+      & h4 {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 90%;
+      }
+      & h4 {
+        padding-top: 0.5rem;
+      }
+    }
+    .price {
+      padding-bottom: 0.5rem;
+    }
+  }
+  .button {
+    margin: auto;
+  }
+}
