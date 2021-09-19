@@ -42,3 +42,10 @@ footer {
     }
   }
 }
+@include large-screen {
+  footer {
+    & i {
+      width: 2rem;
+    }
+  }
+}
