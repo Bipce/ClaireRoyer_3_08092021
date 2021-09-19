@@ -25,3 +25,9 @@
     width: 170px;
   }
 }
+
+@include large-screen {
+  .page button {
+    width: 170px;
+  }
+}
