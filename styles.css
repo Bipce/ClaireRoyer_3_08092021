@@ -160,17 +160,18 @@ a {
 .card-image {
   margin: 0 -18px;
 }
+.card-image img {
+  object-fit: cover;
+}
 
 @media screen and (max-width: 576px) {
   .card-image img {
-    object-fit: cover;
     width: 100%;
     height: 40vh;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .card-image img {
-    object-fit: cover;
     width: 100%;
     height: 40vh;
   }
@@ -179,6 +180,11 @@ a {
   .card-image img {
     width: 100%;
     height: 50vh;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .card-image img {
+    height: 100vh;
   }
 }
 .menu {
@@ -475,6 +481,12 @@ a {
     text-align: center;
   }
 }
+@media screen and (min-width: 1400px) {
+  .restaurant__card {
+    width: 24%;
+    margin: 1rem auto;
+  }
+}
 .card-image {
   margin: 0;
 }
@@ -618,7 +630,7 @@ a {
 @media screen and (min-width: 993px) {
   .page {
     position: relative;
-    margin-top: -5rem;
+    margin-top: -10rem;
     border-radius: 40px;
     flex-wrap: wrap;
   }
@@ -656,6 +668,15 @@ a {
 
   .button {
     margin: auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .page {
+    margin-top: -20rem;
+  }
+
+  .dishes {
+    width: 32%;
   }
 }
 footer {

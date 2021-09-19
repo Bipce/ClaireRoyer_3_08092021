@@ -138,7 +138,7 @@
 @include large-screen {
   .page {
     position: relative;
-    margin-top: -5rem;
+    margin-top: -10rem;
     border-radius: 40px;
     flex-wrap: wrap;
     &__title {
@@ -175,5 +175,13 @@
   }
   .button {
     margin: auto;
+  }
+}
+@include extra-large-screen {
+  .page {
+    margin-top: -20rem;
+  }
+  .dishes {
+    width: 32%;
   }
 }
