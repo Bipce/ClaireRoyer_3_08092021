@@ -27,7 +27,6 @@
     }
     &__card {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       box-shadow: 0 7px 15px 0 darken($color: white, $amount: 20%);
       border-radius: 20px;
@@ -95,10 +94,12 @@
         width: 3rem;
       }
       &__card {
+        flex-direction: row;
         width: 85%;
         position: relative;
         &:active {
           .dishes__card--box {
+            display: flex;
             position: absolute;
             transform: translate(-100px);
             transition: transform 1s ease-in-out;
@@ -170,6 +171,7 @@
     }
     &__card {
       text-align: center;
+      flex-direction: column;
       & p,
       & h4 {
         display: inline-block;
@@ -214,6 +216,7 @@
     }
     &__card {
       text-align: center;
+      flex-direction: column;
       & p,
       & h4 {
         display: inline-block;

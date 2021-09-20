@@ -528,7 +528,6 @@ a {
 }
 .page .dishes__card {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   box-shadow: 0 7px 15px 0 #cccccc;
   border-radius: 20px;
@@ -595,10 +594,12 @@ a {
     width: 3rem;
   }
   .page .dishes__card {
+    flex-direction: row;
     width: 85%;
     position: relative;
   }
   .page .dishes__card:active .dishes__card--box {
+    display: flex;
     position: absolute;
     transform: translate(-100px);
     transition: transform 1s ease-in-out;
@@ -665,6 +666,7 @@ a {
   }
   .dishes__card {
     text-align: center;
+    flex-direction: column;
   }
   .dishes__card p, .dishes__card h4 {
     display: inline-block;
@@ -710,6 +712,7 @@ a {
   }
   .dishes__card {
     text-align: center;
+    flex-direction: column;
   }
   .dishes__card p, .dishes__card h4 {
     display: inline-block;
