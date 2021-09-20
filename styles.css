@@ -536,7 +536,6 @@ a {
 }
 .page .dishes__card:active .dishes__card--box {
   position: absolute;
-  right: 0;
 }
 .page .dishes__card h4,
 .page .dishes__card p {
@@ -561,9 +560,10 @@ a {
   border-radius: 0 20px 20px 0;
   color: white;
   margin: 0;
+  display: none;
   width: 80px;
   height: 85.2px;
-  right: -100px;
+  right: -91px;
 }
 .page .dishes__card--box i {
   font-size: 2rem;
@@ -601,7 +601,7 @@ a {
   .page .dishes__card:active .dishes__card--box {
     display: flex;
     position: absolute;
-    transform: translate(-100px);
+    transform: translate(-91px);
     transition: transform 1s ease-in-out;
   }
   .page .dishes__card:active .dishes__card--box i {
