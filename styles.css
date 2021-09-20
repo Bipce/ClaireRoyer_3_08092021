@@ -748,6 +748,9 @@ footer a {
   padding: 16px;
   margin-bottom: 3rem;
 }
+.button:hover {
+  box-shadow: 0 7px 10px 0 gray;
+}
 
 @media screen and (max-width: 576px) {
   .page button {
@@ -769,6 +772,9 @@ footer a {
 @media screen and (min-width: 993px) {
   .page button {
     width: 170px;
+  }
+  .page button:hover {
+    box-shadow: 0 7px 10px 0 gray;
   }
 }
 

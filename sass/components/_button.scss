@@ -6,6 +6,9 @@
   font-weight: 510;
   padding: 16px;
   margin-bottom: 3rem;
+  &:hover {
+    box-shadow: 0 7px 10px 0 darken($color: white, $amount: 50%);
+  }
 }
 
 @include mobile-only {
@@ -29,5 +32,8 @@
 @include large-screen {
   .page button {
     width: 170px;
+    &:hover {
+      box-shadow: 0 7px 10px 0 darken($color: white, $amount: 50%);
+    }
   }
 }
