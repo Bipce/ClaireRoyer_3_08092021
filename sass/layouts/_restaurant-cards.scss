@@ -27,18 +27,43 @@
     }
     &__card {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       box-shadow: 0 7px 15px 0 darken($color: white, $amount: 20%);
       border-radius: 20px;
       margin: 1.5rem auto;
       padding: 0 1rem;
+      &:active {
+        .dishes__card--box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          right: 0;
+        }
+      }
       h4,
       p {
         margin-top: 0.1rem;
         margin-bottom: 0rem;
       }
+      h4 {
+        padding-top: 1rem;
+      }
+      p {
+        padding-bottom: 1rem;
+      }
       .price {
         font-weight: bold;
+      }
+      &--box {
+        background-color: $color-tertiary;
+        border-radius: 0 20px 20px 0;
+        color: white;
+        margin: 0;
+        display: none;
+        & i {
+          font-size: 2rem;
+        }
       }
     }
   }
@@ -67,7 +92,12 @@
       &__card {
         width: 85%;
         position: relative;
-        padding: 1rem;
+        &:active {
+          .dishes__card--box {
+            width: 80px;
+            height: 81.2px;
+          }
+        }
         &--meal {
           display: inline-block;
           overflow: hidden;

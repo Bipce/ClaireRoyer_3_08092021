@@ -528,19 +528,42 @@ a {
 }
 .page .dishes__card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   box-shadow: 0 7px 15px 0 #cccccc;
   border-radius: 20px;
   margin: 1.5rem auto;
   padding: 0 1rem;
+}
+.page .dishes__card:active .dishes__card--box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
 }
 .page .dishes__card h4,
 .page .dishes__card p {
   margin-top: 0.1rem;
   margin-bottom: 0rem;
 }
+.page .dishes__card h4 {
+  padding-top: 1rem;
+}
+.page .dishes__card p {
+  padding-bottom: 1rem;
+}
 .page .dishes__card .price {
   font-weight: bold;
+}
+.page .dishes__card--box {
+  background-color: #99e2d0;
+  border-radius: 0 20px 20px 0;
+  color: white;
+  margin: 0;
+  display: none;
+}
+.page .dishes__card--box i {
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 576px) {
@@ -570,7 +593,10 @@ a {
   .page .dishes__card {
     width: 85%;
     position: relative;
-    padding: 1rem;
+  }
+  .page .dishes__card:active .dishes__card--box {
+    width: 80px;
+    height: 81.2px;
   }
   .page .dishes__card--meal {
     display: inline-block;
