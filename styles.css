@@ -241,6 +241,7 @@ a {
   }
   .menu__list:active {
     background-color: #e4d5f6;
+    box-shadow: 0 7px 10px 0 gray;
   }
   .menu__list:active .menu__icon {
     background-color: #9356dc;
@@ -261,6 +262,7 @@ a {
   }
   .menu__list:active {
     background-color: #e4d5f6;
+    box-shadow: 0 7px 10px 0 gray;
   }
   .menu__list:active .menu__icon {
     background-color: #9356dc;
@@ -293,6 +295,12 @@ a {
     text-align: end;
     height: 20px;
   }
+  .menu__icon--list {
+    width: 30px;
+  }
+  .menu__icon--store {
+    width: 35px;
+  }
   .menu__list {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -301,9 +309,11 @@ a {
   }
   .menu__list--word {
     text-align: center;
+    margin: auto;
   }
   .menu__list:hover {
     background-color: #e4d5f6;
+    box-shadow: 0 7px 10px 0 gray;
   }
   .menu__list:hover .menu__icon {
     background-color: #9356dc;

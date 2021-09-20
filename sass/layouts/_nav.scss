@@ -53,6 +53,7 @@
       width: 320px;
       &:active {
         background-color: lighten($color: $color-primary, $amount: 30%);
+        box-shadow: 0 7px 10px 0 darken($color: white, $amount: 50%);
         .menu__icon {
           background-color: $color-primary;
           color: transparent;
@@ -71,8 +72,10 @@
       position: relative;
       width: 90%;
       margin: 1.2rem auto;
+
       &:active {
         background-color: lighten($color: $color-primary, $amount: 30%);
+        box-shadow: 0 7px 10px 0 darken($color: white, $amount: 50%);
         .menu__icon {
           background-color: $color-primary;
           color: transparent;
@@ -104,6 +107,12 @@
     &__icon {
       text-align: end;
       height: 20px;
+      &--list {
+        width: 30px;
+      }
+      &--store {
+        width: 35px;
+      }
     }
     &__list {
       @include margin;
@@ -111,9 +120,11 @@
       max-width: 450px;
       &--word {
         text-align: center;
+        margin: auto;
       }
       &:hover {
         background-color: lighten($color: $color-primary, $amount: 30%);
+        box-shadow: 0 7px 10px 0 darken($color: white, $amount: 50%);
         .menu__icon {
           background-color: $color-primary;
           color: transparent;
