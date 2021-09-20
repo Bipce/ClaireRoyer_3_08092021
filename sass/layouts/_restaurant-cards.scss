@@ -28,15 +28,13 @@
     &__card {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       box-shadow: 0 7px 15px 0 darken($color: white, $amount: 20%);
       border-radius: 20px;
       margin: 1.5rem auto;
       padding: 0 1rem;
       &:active {
         .dishes__card--box {
-          display: flex;
-          align-items: center;
-          justify-content: center;
           position: absolute;
           right: 0;
         }
@@ -56,11 +54,18 @@
         font-weight: bold;
       }
       &--box {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: $color-tertiary;
         border-radius: 0 20px 20px 0;
         color: white;
         margin: 0;
-        display: none;
+        // display: none;
+        width: 80px;
+        height: 85.2px;
+        right: -100px;
         & i {
           font-size: 2rem;
         }
@@ -94,8 +99,27 @@
         position: relative;
         &:active {
           .dishes__card--box {
-            width: 80px;
-            height: 81.2px;
+            position: absolute;
+            transform: translate(-100px);
+            transition: transform 1s ease-in-out;
+            & i {
+              transform: rotate(-1turn);
+              transition: transform 500ms ease-in-out;
+            }
+          }
+          .price {
+            transform: translateX(-5rem);
+            transition: 300ms;
+            margin-top: 3rem;
+          }
+          .dishes__card {
+            &--meal,
+            &--title {
+              width: 60%;
+            }
+            & p {
+              margin-top: 0;
+            }
           }
         }
         &--meal {
@@ -103,18 +127,21 @@
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
-          width: 88%;
+          width: 200px;
         }
-      }
-      h4 {
-        font-size: 1.2rem;
+        & h4 {
+          font-size: 1.2rem;
+          display: inline-block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 100%;
+        }
       }
     }
     .price {
-      position: absolute;
-      right: 1rem;
-      bottom: 1rem;
-      width: 27px !important;
+      justify-content: right;
+      margin-top: 2.6rem;
     }
   }
 }
