@@ -474,14 +474,26 @@ a {
     right: 1rem;
     bottom: 2.5rem;
     font-size: 1.5rem;
+    z-index: 1;
   }
-  .restaurant__card i:hover {
+  .restaurant__card i:hover::after {
+    opacity: 1;
+  }
+  .restaurant__card i::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
     background: -webkit-linear-gradient(#9356dc, #ff79da);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    transition: 0.2s;
+    transition: opacity 250ms;
   }
   .restaurant__card--new {
     position: absolute;
@@ -517,6 +529,21 @@ a {
 .page__title i {
   width: 10%;
   text-align: right;
+}
+.page .dishes__card {
+  animation: slideIn linear 2s;
+}
+@keyframes slideIn {
+  0% {
+    margin-top: -100px;
+    opacity: 0;
+    transition: ease-in-out;
+  }
+  100% {
+    margin-top: 1.6rem;
+    opacity: 1;
+    transition: ease-in-out;
+  }
 }
 .page .dishes h3 {
   text-transform: uppercase;
@@ -659,7 +686,7 @@ a {
     width: 3rem;
   }
   .dishes__bar--title {
-    margin-top: -5rem;
+    margin-top: -7.3rem;
   }
   .dishes h3 {
     width: 100%;
@@ -708,7 +735,7 @@ a {
     width: 3rem;
   }
   .dishes__bar--title {
-    margin-top: -5rem;
+    margin-top: -7.3rem;
   }
   .dishes__card {
     text-align: center;
