@@ -18,9 +18,9 @@
   }
   .dishes {
     &__card {
-      animation: slideIn linear 2s;
+      animation: dishesSlideIn linear 2s;
 
-      @keyframes slideIn {
+      @keyframes dishesSlideIn {
         0% {
           margin-top: -100px;
           opacity: 0;
@@ -32,6 +32,56 @@
           opacity: 1;
           transition: ease-in-out;
         }
+      }
+    }
+    .dishes__card:active {
+      .dishes__price-box--box {
+        animation: slideIn linear 500ms;
+        & i {
+          animation: icon-rotate linear 500ms;
+        }
+      }
+      @keyframes slideIn {
+        0% {
+          width: 0;
+        }
+        100% {
+          animation-fill-mode: forwards;
+        }
+      }
+      @keyframes icon-rotate {
+        0% {
+          width: 0;
+        }
+        100% {
+          transform: rotate(0.5turn);
+          transition: transform 500ms ease-in-out;
+        }
+      }
+    }
+    &__price-box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      &--box {
+        width: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        color: white;
+        border-radius: 0 20px 20px 0;
+        &:active {
+          animation: slideIn linear 500ms;
+        }
+        & i {
+          rotate: (0.5turn);
+        }
+      }
+      p {
+        width: 20%;
+        margin-right: -80px;
       }
     }
     h3 {
@@ -48,12 +98,7 @@
       box-shadow: 0 7px 15px 0 darken($color: white, $amount: 20%);
       border-radius: 20px;
       margin: 1.5rem auto;
-      padding: 0 1rem;
-      &:active {
-        .dishes__card--box {
-          position: absolute;
-        }
-      }
+      padding: 0 0 0 1rem;
       h4,
       p {
         margin-top: 0.1rem;
@@ -64,26 +109,6 @@
       }
       p {
         padding-bottom: 1rem;
-      }
-      .price {
-        font-weight: bold;
-      }
-      &--box {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $color-tertiary;
-        border-radius: 0 20px 20px 0;
-        color: white;
-        margin: 0;
-        display: none;
-        width: 80px;
-        height: 85.2px;
-        right: -91px;
-        & i {
-          font-size: 2rem;
-        }
       }
     }
   }
@@ -114,21 +139,11 @@
         width: 85%;
         position: relative;
         &:active {
-          .dishes__card--box {
-            display: flex;
-            position: absolute;
-            transform: translate(-91px);
-            transition: transform 1s ease-in-out;
-            & i {
-              transform: rotate(-1turn);
-              transition: transform 500ms ease-in-out;
-            }
-          }
-          .price {
-            transform: translateX(-5rem);
-            transition: 300ms;
-            margin-top: 3rem;
-          }
+          // p {
+          //   transform: translateX(-5rem);
+          //   transition: 300ms;
+          //   margin-top: 3rem;
+          // }
           .dishes__card {
             &--meal,
             &--title {
@@ -155,10 +170,45 @@
           width: 100%;
         }
       }
-    }
-    .price {
-      justify-content: right;
-      margin-top: 2.6rem;
+      .dishes__card:active {
+        .dishes__price-box--box {
+          animation: slideIn linear 500ms;
+          & i {
+            animation: icon-rotate linear 500ms;
+          }
+        }
+        @keyframes slideIn {
+          0% {
+            width: 0;
+            margin-right: -50px;
+            transform: scale(0);
+          }
+          100% {
+            width: 70%;
+            height: 85.2px;
+            margin-right: 0;
+            transform: scale(1);
+          }
+        }
+        @keyframes icon-rotate {
+          0% {
+            width: 0;
+          }
+          100% {
+            font-size: 2rem;
+            width: 32px;
+            transform: rotate(0.5turn);
+            transition: transform 700ms ease-in-out;
+          }
+        }
+      }
+      &__price-box {
+        width: 100%;
+        p {
+          margin-top: 3rem;
+          width: 30%;
+        }
+      }
     }
   }
 }
