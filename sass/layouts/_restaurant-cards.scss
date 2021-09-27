@@ -17,20 +17,43 @@
     }
   }
   .dishes {
+    &__starters {
+      & .dishes__card {
+        animation-duration: 500ms, 250ms;
+      }
+    }
+    &__main {
+      .dishes__card {
+        animation-duration: 1000ms, 500ms;
+      }
+    }
+    &__desserts {
+      .dishes__card {
+        animation-duration: 1500ms, 750ms;
+      }
+    }
     &__card {
-      animation: dishesSlideIn linear 2s;
+      animation: dishesSlideIn, slideWait linear 2s;
 
       @keyframes dishesSlideIn {
         0% {
-          margin-top: -100px;
           opacity: 0;
           transition: ease-in-out;
+          transform: translateY(1rem);
         }
 
         100% {
-          margin-top: 1.6rem;
           opacity: 1;
           transition: ease-in-out;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideWait {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
         }
       }
     }

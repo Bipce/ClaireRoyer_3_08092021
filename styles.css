@@ -530,19 +530,36 @@ a {
   width: 10%;
   text-align: right;
 }
+.page .dishes__starters .dishes__card {
+  animation-duration: 500ms, 250ms;
+}
+.page .dishes__main .dishes__card {
+  animation-duration: 1000ms, 500ms;
+}
+.page .dishes__desserts .dishes__card {
+  animation-duration: 1500ms, 750ms;
+}
 .page .dishes__card {
-  animation: dishesSlideIn linear 2s;
+  animation: dishesSlideIn, slideWait linear 2s;
 }
 @keyframes dishesSlideIn {
   0% {
-    margin-top: -100px;
     opacity: 0;
     transition: ease-in-out;
+    transform: translateY(1rem);
   }
   100% {
-    margin-top: 1.6rem;
     opacity: 1;
     transition: ease-in-out;
+    transform: translateY(0);
+  }
+}
+@keyframes slideWait {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .page .dishes .dishes__card:active .dishes__price-box--box {
