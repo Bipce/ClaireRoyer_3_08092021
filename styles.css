@@ -570,26 +570,6 @@ a {
 .page .dishes__card {
   animation: dishesSlideIn, slideWait linear 2s;
 }
-@keyframes dishesSlideIn {
-  0% {
-    opacity: 0;
-    transition: ease-in-out;
-    transform: translateY(1rem);
-  }
-  100% {
-    opacity: 1;
-    transition: ease-in-out;
-    transform: translateY(0);
-  }
-}
-@keyframes slideWait {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 .page .dishes .dishes__card:active .dishes__price-box--box {
   animation: slideIn linear 500ms;
 }
@@ -827,20 +807,84 @@ a {
   }
   .dishes__card {
     text-align: center;
-    flex-direction: column;
+    flex-direction: row;
   }
-  .dishes__card p, .dishes__card h4 {
+  .dishes__card:hover .dishes__card--box {
+    animation: checkbox linear 400ms;
+    height: auto;
+    width: 30%;
+  }
+  .dishes__card:hover i {
+    animation: icon linear 400ms;
+    width: 32px;
+    font-size: 2rem;
+    color: white;
+  }
+  .dishes__card:hover .dishes__card--title-meal {
+    width: 100%;
+  }
+  .dishes__card:hover .dishes__card--price {
+    width: 10%;
+  }
+  @keyframes icon {
+    0% {
+      color: transparent;
+      transform: rotate(0.5turn);
+    }
+    20% {
+      color: white;
+    }
+    100% {
+      color: white;
+      width: 32px;
+      font-size: 2rem;
+      transform: rotate(1turn);
+    }
+  }
+  @keyframes checkbox {
+    0% {
+      width: 0;
+      min-width: 0;
+    }
+    100% {
+      width: 30%;
+    }
+  }
+  .dishes__card--title, .dishes__card--meal {
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 90%;
   }
-  .dishes__card h4 {
+  .dishes__card--meal {
     padding-top: 0.5rem;
   }
-  .dishes .price {
+  .dishes__card--box {
+    display: flex;
+    justify-content: center;
+    background-color: #99e2d0;
+    border-radius: 0 20px 20px 0;
+  }
+  .dishes__card--box i {
+    display: flex;
+    margin: auto;
+    color: transparent;
+    min-width: 0;
+    width: 0;
+  }
+  .dishes__card--price {
+    margin: 0 1rem;
+  }
+  .dishes__card--price .price {
     padding-bottom: 0.5rem;
+    margin-top: 3.3rem;
+    width: 10%;
+    font-weight: bold;
+  }
+  .dishes__card--title-meal {
+    width: 100%;
+    overflow: hidden;
   }
 
   .button {
