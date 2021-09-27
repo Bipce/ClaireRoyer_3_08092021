@@ -1,6 +1,7 @@
 .card-image {
   margin: 0;
 }
+
 .page {
   background-color: white;
   display: flex;
@@ -87,31 +88,91 @@
       //   }
       // }
     }
-    .dishes__card:active {
-      .dishes__price-box--box {
-        animation: slideIn linear 500ms;
-        & i {
-          animation: icon-rotate linear 500ms;
-        }
+    &__card {
+      text-align: center;
+      flex-direction: row;
+      &:hover .dishes__card--box {
+        animation: checkbox linear 400ms;
+        height: auto;
+        width: 30%;
       }
-      @keyframes slideIn {
-        0% {
-          width: 0;
-        }
-        100% {
-          animation-fill-mode: forwards;
-        }
+      &:hover i {
+        animation: icon linear 400ms;
+        width: 32px;
+        font-size: 2rem;
+        color: white;
       }
-      @keyframes icon-rotate {
+      &:hover .dishes__card--title-meal {
+        width: 100%;
+      }
+      &:hover .dishes__card--price {
+        width: 10%;
+      }
+      @keyframes icon {
         0% {
-          width: 0;
-        }
-        100% {
+          color: transparent;
           transform: rotate(0.5turn);
-          transition: transform 500ms ease-in-out;
         }
+        20% {
+          color: white;
+        }
+        100% {
+          color: white;
+          width: 32px;
+          font-size: 2rem;
+          transform: rotate(1turn);
+        }
+      }
+
+      @keyframes checkbox {
+        0% {
+          width: 0;
+          min-width: 0;
+        }
+        100% {
+          width: 30%;
+        }
+      }
+      &--title,
+      &--meal {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 90%;
+      }
+      &--meal {
+        padding-top: 0.5rem;
+      }
+      &--box {
+        display: flex;
+        justify-content: center;
+        background-color: $color-tertiary;
+        border-radius: 0 20px 20px 0;
+        & i {
+          display: flex;
+          margin: auto;
+          color: transparent;
+          min-width: 0;
+          width: 0;
+        }
+      }
+      &--price {
+        margin: 0 1rem;
+        .price {
+          padding-bottom: 0.5rem;
+          margin-top: 3.3rem;
+          width: 10%;
+          font-weight: bold;
+        }
+      }
+
+      &--title-meal {
+        width: 100%;
+        overflow: hidden;
       }
     }
+
     &__price-box {
       width: 100%;
       display: flex;
@@ -302,6 +363,9 @@
       & h4 {
         padding-top: 0.5rem;
       }
+      &--title-meal {
+        width: 40%;
+      }
     }
   }
   .price {
@@ -332,90 +396,6 @@
       width: 3rem;
       &--title {
         margin-top: -7.3rem;
-      }
-    }
-    &__card {
-      text-align: center;
-      flex-direction: row;
-      &:hover .dishes__card--box {
-        animation: checkbox linear 400ms;
-        height: auto;
-        width: 30%;
-      }
-      &:hover i {
-        animation: icon linear 400ms;
-        width: 32px;
-        font-size: 2rem;
-        color: white;
-      }
-      &:hover .dishes__card--title-meal {
-        width: 100%;
-      }
-      &:hover .dishes__card--price {
-        width: 10%;
-      }
-      @keyframes icon {
-        0% {
-          color: transparent;
-          transform: rotate(0.5turn);
-        }
-        20% {
-          color: white;
-        }
-        100% {
-          color: white;
-          width: 32px;
-          font-size: 2rem;
-          transform: rotate(1turn);
-        }
-      }
-
-      @keyframes checkbox {
-        0% {
-          width: 0;
-          min-width: 0;
-        }
-        100% {
-          width: 30%;
-        }
-      }
-      &--title,
-      &--meal {
-        display: inline-block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 90%;
-      }
-      &--meal {
-        padding-top: 0.5rem;
-      }
-      &--box {
-        display: flex;
-        justify-content: center;
-        background-color: $color-tertiary;
-        border-radius: 0 20px 20px 0;
-        & i {
-          display: flex;
-          margin: auto;
-          color: transparent;
-          min-width: 0;
-          width: 0;
-        }
-      }
-      &--price {
-        margin: 0 1rem;
-        .price {
-          padding-bottom: 0.5rem;
-          margin-top: 3.3rem;
-          width: 10%;
-          font-weight: bold;
-        }
-      }
-
-      &--title-meal {
-        width: 100%;
-        overflow: hidden;
       }
     }
   }
