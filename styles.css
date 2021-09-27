@@ -522,13 +522,41 @@ a {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   display: flex;
-  justify-content: space-between;
   width: 90%;
   padding-top: 2rem;
 }
-.page__title i {
-  width: 10%;
-  text-align: right;
+.page__title .first-heart,
+.page__title .second-heart {
+  position: absolute;
+  top: 3.6rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+.page__title .first-heart {
+  color: black;
+  width: 2rem;
+}
+.page__title .second-heart:hover {
+  animation: heart-animation;
+  animation-duration: 200ms;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: 0.2s;
+  width: 2rem;
+}
+@keyframes heart-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .page .dishes__starters .dishes__card {
   animation-duration: 500ms, 250ms;

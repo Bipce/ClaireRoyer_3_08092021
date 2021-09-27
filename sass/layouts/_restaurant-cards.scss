@@ -8,12 +8,42 @@
   &__title {
     @include margin;
     display: flex;
-    justify-content: space-between;
     width: 90%;
     padding-top: 2rem;
-    & i {
-      width: 10%;
-      text-align: right;
+    & .first-heart,
+    .second-heart {
+      position: absolute;
+      top: 3.6rem;
+      right: 1.5rem;
+      cursor: pointer;
+    }
+    .first-heart {
+      color: black;
+      width: 2rem;
+    }
+    .second-heart {
+      &:hover {
+        animation: heart-animation;
+        animation-duration: 200ms;
+        background: -webkit-linear-gradient(#9356dc, #ff79da);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        transition: 0.2s;
+        width: 2rem;
+      }
+    }
+    @keyframes heart-animation {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
     }
   }
   .dishes {
