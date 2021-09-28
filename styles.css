@@ -384,20 +384,6 @@ a {
     padding: 0 0 0 0.3rem;
     margin: 0.5rem;
   }
-  .restaurant__card i {
-    position: absolute;
-    font-size: 1.5rem;
-    bottom: 2rem;
-    right: 1rem;
-  }
-  .restaurant__card i:active {
-    background: -webkit-linear-gradient(#9356dc, #ff79da);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    transition: 0.2s;
-  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .restaurant {
@@ -420,20 +406,6 @@ a {
   }
   .restaurant__card--size {
     margin: 0.5rem;
-  }
-  .restaurant__card i {
-    position: absolute;
-    right: 1rem;
-    bottom: 2rem;
-    font-size: 1.5rem;
-  }
-  .restaurant__card i:active {
-    background: -webkit-linear-gradient(#9356dc, #ff79da);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    transition: 0.2s;
   }
   .restaurant__card--new {
     position: absolute;
@@ -469,32 +441,6 @@ a {
     margin: 0.5rem;
     font-size: 1.2rem;
   }
-  .restaurant__card i {
-    position: absolute;
-    right: 1rem;
-    bottom: 2.5rem;
-    font-size: 1.5rem;
-    z-index: 1;
-  }
-  .restaurant__card i:hover::after {
-    opacity: 1;
-  }
-  .restaurant__card i::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    z-index: -1;
-    background: -webkit-linear-gradient(#9356dc, #ff79da);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    transition: opacity 250ms;
-  }
   .restaurant__card--new {
     position: absolute;
     top: 1rem;
@@ -524,28 +470,6 @@ a {
   display: flex;
   width: 90%;
   padding-top: 2rem;
-}
-.page__title .first-heart,
-.page__title .second-heart {
-  position: absolute;
-  top: 3.6rem;
-  right: 1.5rem;
-  cursor: pointer;
-}
-.page__title .first-heart {
-  color: black;
-  width: 2rem;
-}
-.page__title .second-heart:hover {
-  animation: heart-animation;
-  animation-duration: 200ms;
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  transition: 0.2s;
-  width: 2rem;
 }
 @keyframes heart-animation {
   0% {
@@ -987,6 +911,53 @@ footer a {
   .page button:hover {
     box-shadow: 0 7px 10px 0 gray;
   }
+}
+.page__title .first-heart,
+.page__title .second-heart {
+  position: absolute;
+  top: 3.6rem;
+  right: 1.5rem;
+  cursor: pointer;
+  width: 2rem;
+}
+.page__title .first-heart {
+  color: black;
+}
+.page__title .second-heart:active {
+  animation: heart-animation;
+  animation-duration: 200ms;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.restaurant__card .first-heart, .restaurant__card .second-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  cursor: pointer;
+}
+.restaurant__card .first-heart {
+  color: black;
+  width: 2rem;
+  bottom: 2rem;
+  right: 1.5rem;
+}
+.restaurant__card .second-heart {
+  bottom: 2rem;
+  right: 2rem;
+}
+.restaurant__card .second-heart:active {
+  animation: heart-animation;
+  animation-duration: 200ms;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: 0.2s;
 }
 
 /*# sourceMappingURL=styles.css.map */

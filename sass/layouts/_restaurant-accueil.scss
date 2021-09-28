@@ -55,20 +55,20 @@
         padding: 0 0 0 0.3rem;
         margin: 0.5rem;
       }
-      & i {
-        position: absolute;
-        font-size: 1.5rem;
-        bottom: 2rem;
-        right: 1rem;
-        &:active {
-          background: -webkit-linear-gradient(#9356dc, #ff79da);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-weight: bold;
-          transition: 0.2s;
-        }
-      }
+      // & i {
+      //   position: absolute;
+      //   font-size: 1.5rem;
+      //   bottom: 2rem;
+      //   right: 1rem;
+      //   &:active {
+      //     background: -webkit-linear-gradient(#9356dc, #ff79da);
+      //     background-clip: text;
+      //     -webkit-background-clip: text;
+      //     -webkit-text-fill-color: transparent;
+      //     font-weight: bold;
+      //     transition: 0.2s;
+      //   }
+      // }
     }
   }
 }
@@ -92,20 +92,20 @@
       &--size {
         margin: 0.5rem;
       }
-      & i {
-        position: absolute;
-        right: 1rem;
-        bottom: 2rem;
-        font-size: 1.5rem;
-        &:active {
-          background: -webkit-linear-gradient(#9356dc, #ff79da);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-weight: bold;
-          transition: 0.2s;
-        }
-      }
+      // & i {
+      //   position: absolute;
+      //   right: 1rem;
+      //   bottom: 2rem;
+      //   font-size: 1.5rem;
+      //   &:active {
+      //     background: -webkit-linear-gradient(#9356dc, #ff79da);
+      //     background-clip: text;
+      //     -webkit-background-clip: text;
+      //     -webkit-text-fill-color: transparent;
+      //     font-weight: bold;
+      //     transition: 0.2s;
+      //   }
+      // }
       &--new {
         position: absolute;
         top: 1rem;
@@ -140,39 +140,39 @@
         margin: 0.5rem;
         font-size: 1.2rem;
       }
-      & i {
-        position: absolute;
-        right: 1rem;
-        bottom: 2.5rem;
-        font-size: 1.5rem;
-        z-index: 1;
-        &:hover {
-          &::after {
-            opacity: 1;
-          }
-          // background: -webkit-linear-gradient(#9356dc, #ff79da);
-          // background-clip: text;
-          // -webkit-background-clip: text;
-          // -webkit-text-fill-color: transparent;
-          // font-weight: bold;
-        }
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          opacity: 0;
-          z-index: -1;
-          background: -webkit-linear-gradient(#9356dc, #ff79da);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-weight: bold;
-          transition: opacity 250ms;
-        }
-      }
+      // & i {
+      //   position: absolute;
+      //   right: 1rem;
+      //   bottom: 2.5rem;
+      //   font-size: 1.5rem;
+      //   z-index: 1;
+      //   &:hover {
+      //     &::after {
+      //       opacity: 1;
+      //     }
+      // background: -webkit-linear-gradient(#9356dc, #ff79da);
+      // background-clip: text;
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      // font-weight: bold;
+      // }
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   top: 0;
+      //   right: 0;
+      //   bottom: 0;
+      //   left: 0;
+      //   opacity: 0;
+      //   z-index: -1;
+      //   background: -webkit-linear-gradient(#9356dc, #ff79da);
+      //   background-clip: text;
+      //   -webkit-background-clip: text;
+      //   -webkit-text-fill-color: transparent;
+      //   font-weight: bold;
+      //   transition: opacity 250ms;
+      // }
+      // }
       &--new {
         position: absolute;
         top: 1rem;

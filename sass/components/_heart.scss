@@ -1,0 +1,55 @@
+.page {
+  &__title {
+    & .first-heart,
+    .second-heart {
+      position: absolute;
+      top: 3.6rem;
+      right: 1.5rem;
+      cursor: pointer;
+      width: 2rem;
+    }
+    .first-heart {
+      color: black;
+    }
+    .second-heart {
+      &:active {
+        animation: heart-animation;
+        animation-duration: 200ms;
+        background: -webkit-linear-gradient(#9356dc, #ff79da);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+.restaurant__card {
+  & .first-heart,
+  & .second-heart {
+    font-size: 1.5rem;
+    position: absolute;
+    cursor: pointer;
+  }
+  .first-heart {
+    color: black;
+    width: 2rem;
+    bottom: 2rem;
+    right: 1.5rem;
+  }
+  .second-heart {
+    bottom: 2rem;
+    right: 2rem;
+    &:active {
+      animation: heart-animation;
+      animation-duration: 200ms;
+      background: -webkit-linear-gradient(#9356dc, #ff79da);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+  }
+}
