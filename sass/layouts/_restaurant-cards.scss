@@ -10,59 +10,8 @@
     display: flex;
     width: 90%;
     padding-top: 2rem;
-    @keyframes heart-animation {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 0.5;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
   }
   .dishes {
-    &__starters {
-      & .dishes__card {
-        animation-duration: 500ms, 250ms;
-      }
-    }
-    &__main {
-      .dishes__card {
-        animation-duration: 1000ms, 500ms;
-      }
-    }
-    &__desserts {
-      .dishes__card {
-        animation-duration: 1500ms, 750ms;
-      }
-    }
-    &__card {
-      animation: dishesSlideIn, slideWait linear 2s;
-
-      @keyframes dishesSlideIn {
-        0% {
-          opacity: 0;
-          transition: ease-in-out;
-          transform: translateY(1rem);
-        }
-
-        100% {
-          opacity: 1;
-          transition: ease-in-out;
-          transform: translateY(0);
-        }
-      }
-      @keyframes slideWait {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-    }
     &__card {
       text-align: center;
       flex-direction: row;
@@ -98,7 +47,6 @@
           transform: rotate(1turn);
         }
       }
-
       @keyframes checkbox {
         0% {
           width: 0;

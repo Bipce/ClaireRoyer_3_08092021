@@ -1,0 +1,42 @@
+.dishes__card {
+  animation: dishesSlideIn, slideWait linear 2s;
+
+  @keyframes dishesSlideIn {
+    0% {
+      opacity: 0;
+      transition: ease-in-out;
+      transform: translateY(1rem);
+    }
+
+    100% {
+      opacity: 1;
+      transition: ease-in-out;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideWait {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+.dishes {
+  &__starters {
+    & .dishes__card {
+      animation-duration: 3000ms, 500ms;
+    }
+  }
+  &__main {
+    .dishes__card {
+      animation-duration: 3500ms, 900ms;
+    }
+  }
+  &__desserts {
+    .dishes__card {
+      animation-duration: 4000ms, 1300ms;
+    }
+  }
+}

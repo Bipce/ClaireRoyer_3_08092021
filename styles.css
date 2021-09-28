@@ -471,49 +471,6 @@ a {
   width: 90%;
   padding-top: 2rem;
 }
-@keyframes heart-animation {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.page .dishes__starters .dishes__card {
-  animation-duration: 500ms, 250ms;
-}
-.page .dishes__main .dishes__card {
-  animation-duration: 1000ms, 500ms;
-}
-.page .dishes__desserts .dishes__card {
-  animation-duration: 1500ms, 750ms;
-}
-.page .dishes__card {
-  animation: dishesSlideIn, slideWait linear 2s;
-}
-@keyframes dishesSlideIn {
-  0% {
-    opacity: 0;
-    transition: ease-in-out;
-    transform: translateY(1rem);
-  }
-  100% {
-    opacity: 1;
-    transition: ease-in-out;
-    transform: translateY(0);
-  }
-}
-@keyframes slideWait {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 .page .dishes__card {
   text-align: center;
   flex-direction: row;
@@ -871,6 +828,40 @@ footer a {
     width: 2rem;
   }
 }
+.dishes__card {
+  animation: dishesSlideIn, slideWait linear 2s;
+}
+@keyframes dishesSlideIn {
+  0% {
+    opacity: 0;
+    transition: ease-in-out;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transition: ease-in-out;
+    transform: translateY(0);
+  }
+}
+@keyframes slideWait {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.dishes__starters .dishes__card {
+  animation-duration: 3000ms, 500ms;
+}
+.dishes__main .dishes__card {
+  animation-duration: 3500ms, 900ms;
+}
+.dishes__desserts .dishes__card {
+  animation-duration: 4000ms, 1300ms;
+}
+
 .button {
   cursor: pointer;
   background: linear-gradient(#9356dc, #ff79da);
@@ -910,6 +901,17 @@ footer a {
   }
   .page button:hover {
     box-shadow: 0 7px 10px 0 gray;
+  }
+}
+@keyframes heart-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .page__title .first-heart,
