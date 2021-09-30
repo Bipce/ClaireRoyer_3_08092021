@@ -15,47 +15,6 @@
     &__card {
       text-align: center;
       flex-direction: row;
-      &:active .dishes__card--box {
-        animation: checkbox linear 400ms;
-        height: auto;
-        width: 30%;
-      }
-      &:active i {
-        animation: icon linear 400ms;
-        width: 32px;
-        font-size: 2rem;
-        color: white;
-      }
-      &:active .dishes__card--title-meal {
-        width: 100%;
-      }
-      &:active .dishes__card--price {
-        width: 10%;
-      }
-      @keyframes icon {
-        0% {
-          color: transparent;
-          transform: rotate(0.5turn);
-        }
-        20% {
-          color: white;
-        }
-        100% {
-          color: white;
-          width: 32px;
-          font-size: 2rem;
-          transform: rotate(1turn);
-        }
-      }
-      @keyframes checkbox {
-        0% {
-          width: 0;
-          min-width: 0;
-        }
-        100% {
-          width: 30%;
-        }
-      }
       &--title,
       &--meal {
         display: inline-block;
@@ -109,9 +68,6 @@
         background-color: $color-tertiary;
         color: white;
         border-radius: 0 20px 20px 0;
-        &:active {
-          animation: slideIn linear 500ms;
-        }
       }
       p {
         width: 20%;
@@ -172,22 +128,6 @@
         flex-direction: row;
         width: 85%;
         position: relative;
-        &:active {
-          // p {
-          //   transform: translateX(-5rem);
-          //   transition: 300ms;
-          //   margin-top: 3rem;
-          // }
-          .dishes__card {
-            &--meal,
-            &--title {
-              width: 60%;
-            }
-            & p {
-              margin-top: 0;
-            }
-          }
-        }
         &--meal {
           display: inline-block;
           overflow: hidden;
@@ -204,38 +144,7 @@
           width: 100%;
         }
       }
-      .dishes__card:active {
-        .dishes__price-box--box {
-          animation: slideIn linear 500ms;
-          & i {
-            animation: icon-rotate linear 500ms;
-          }
-        }
-        @keyframes slideIn {
-          0% {
-            width: 0;
-            margin-right: -50px;
-            transform: scale(0);
-          }
-          100% {
-            width: 70%;
-            height: 85.2px;
-            margin-right: 0;
-            transform: scale(1);
-          }
-        }
-        @keyframes icon-rotate {
-          0% {
-            width: 0;
-          }
-          100% {
-            font-size: 2rem;
-            width: 32px;
-            transform: rotate(0.5turn);
-            transition: transform 700ms ease-in-out;
-          }
-        }
-      }
+
       &__price-box {
         width: 100%;
         p {
@@ -246,6 +155,7 @@
     }
   }
 }
+
 @include small-to-large {
   .page {
     position: relative;
@@ -323,6 +233,7 @@
     margin: auto;
   }
 }
+
 @include extra-large-screen {
   .page {
     margin-top: -20rem;

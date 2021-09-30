@@ -475,47 +475,6 @@ a {
   text-align: center;
   flex-direction: row;
 }
-.page .dishes__card:active .dishes__card--box {
-  animation: checkbox linear 400ms;
-  height: auto;
-  width: 30%;
-}
-.page .dishes__card:active i {
-  animation: icon linear 400ms;
-  width: 32px;
-  font-size: 2rem;
-  color: white;
-}
-.page .dishes__card:active .dishes__card--title-meal {
-  width: 100%;
-}
-.page .dishes__card:active .dishes__card--price {
-  width: 10%;
-}
-@keyframes icon {
-  0% {
-    color: transparent;
-    transform: rotate(0.5turn);
-  }
-  20% {
-    color: white;
-  }
-  100% {
-    color: white;
-    width: 32px;
-    font-size: 2rem;
-    transform: rotate(1turn);
-  }
-}
-@keyframes checkbox {
-  0% {
-    width: 0;
-    min-width: 0;
-  }
-  100% {
-    width: 30%;
-  }
-}
 .page .dishes__card--title, .page .dishes__card--meal {
   display: inline-block;
   overflow: hidden;
@@ -566,9 +525,6 @@ a {
   background-color: #99e2d0;
   color: white;
   border-radius: 0 20px 20px 0;
-}
-.page .dishes__price-box--box:active {
-  animation: slideIn linear 500ms;
 }
 .page .dishes__price-box p {
   width: 20%;
@@ -631,12 +587,6 @@ a {
     width: 85%;
     position: relative;
   }
-  .page .dishes__card:active .dishes__card--meal, .page .dishes__card:active .dishes__card--title {
-    width: 60%;
-  }
-  .page .dishes__card:active .dishes__card p {
-    margin-top: 0;
-  }
   .page .dishes__card--meal {
     display: inline-block;
     overflow: hidden;
@@ -651,36 +601,6 @@ a {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%;
-  }
-  .page .dishes .dishes__card:active .dishes__price-box--box {
-    animation: slideIn linear 500ms;
-  }
-  .page .dishes .dishes__card:active .dishes__price-box--box i {
-    animation: icon-rotate linear 500ms;
-  }
-  @keyframes slideIn {
-    0% {
-      width: 0;
-      margin-right: -50px;
-      transform: scale(0);
-    }
-    100% {
-      width: 70%;
-      height: 85.2px;
-      margin-right: 0;
-      transform: scale(1);
-    }
-  }
-  @keyframes icon-rotate {
-    0% {
-      width: 0;
-    }
-    100% {
-      font-size: 2rem;
-      width: 32px;
-      transform: rotate(0.5turn);
-      transition: transform 700ms ease-in-out;
-    }
   }
   .page .dishes__price-box {
     width: 100%;
@@ -950,6 +870,90 @@ footer a {
   animation-duration: 4000ms, 1300ms;
 }
 
+.dishes__card:active .dishes__card--box {
+  animation: checkbox linear 400ms;
+  height: auto;
+  width: 30%;
+}
+.dishes__card:active i {
+  animation: icon linear 400ms;
+  width: 32px;
+  font-size: 2rem;
+  color: white;
+}
+.dishes__card:active .dishes__card--title-meal {
+  width: 100%;
+}
+.dishes__card:active .dishes__card--price {
+  width: 10%;
+}
+@keyframes icon {
+  0% {
+    color: transparent;
+    transform: rotate(0.5turn);
+  }
+  20% {
+    color: white;
+  }
+  100% {
+    color: white;
+    width: 32px;
+    font-size: 2rem;
+    transform: rotate(1turn);
+  }
+}
+@keyframes checkbox {
+  0% {
+    width: 0;
+    min-width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+.dishes__price-box--box:active {
+  animation: slideIn linear 500ms;
+}
+
+@media screen and (max-width: 576px) {
+  .dishes__card:active .dishes__price-box--box {
+    animation: slideIn linear 500ms;
+  }
+  .dishes__card:active .dishes__price-box--box i {
+    animation: icon-rotate linear 500ms;
+  }
+  @keyframes slideIn {
+    0% {
+      width: 0;
+      margin-right: -50px;
+      transform: scale(0);
+    }
+    100% {
+      width: 70%;
+      height: 85.2px;
+      margin-right: 0;
+      transform: scale(1);
+    }
+  }
+  @keyframes icon-rotate {
+    0% {
+      width: 0;
+    }
+    100% {
+      font-size: 2rem;
+      width: 32px;
+      transform: rotate(0.5turn);
+      transition: transform 700ms ease-in-out;
+    }
+  }
+
+  .dishes__card:active .dishes__card--meal, .dishes__card:active .dishes__card--title {
+    width: 60%;
+  }
+  .dishes__card:active .dishes__card p {
+    margin-top: 0;
+  }
+}
 .button {
   cursor: pointer;
   background: linear-gradient(#9356dc, #ff79da);
