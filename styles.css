@@ -570,9 +570,6 @@ a {
 .page .dishes__price-box--box:active {
   animation: slideIn linear 500ms;
 }
-.page .dishes__price-box--box i {
-  rotate: 0.5turn;
-}
 .page .dishes__price-box p {
   width: 20%;
   margin-right: -80px;
