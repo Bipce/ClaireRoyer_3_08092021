@@ -214,6 +214,17 @@ a {
   padding: 0.5rem;
   cursor: pointer;
 }
+.menu__list:hover {
+  background-color: #e4d5f6;
+  box-shadow: 0 7px 10px 0 gray;
+}
+.menu__list:hover .menu__icon {
+  background-color: #9356dc;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .menu__list--word {
   font-weight: bold;
   margin-right: 2.5rem;
@@ -238,17 +249,6 @@ a {
   .menu__list {
     margin: 1.2rem auto;
     width: 320px;
-  }
-  .menu__list:active {
-    background-color: #e4d5f6;
-    box-shadow: 0 7px 10px 0 gray;
-  }
-  .menu__list:active .menu__icon {
-    background-color: #9356dc;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -310,17 +310,6 @@ a {
   .menu__list--word {
     text-align: center;
     margin: auto;
-  }
-  .menu__list:hover {
-    background-color: #e4d5f6;
-    box-shadow: 0 7px 10px 0 gray;
-  }
-  .menu__list:hover .menu__icon {
-    background-color: #9356dc;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 .restaurant {
@@ -591,7 +580,6 @@ a {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 200px;
   }
   .page .dishes__card h4 {
     font-size: 1.2rem;
@@ -755,7 +743,7 @@ footer a {
   border: 4px solid #9356dc;
   opacity: 0;
   border-radius: 50%;
-  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) 3;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) 2;
 }
 .lds-ripple div:nth-child(2) {
   animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) 2;
@@ -798,10 +786,7 @@ footer a {
     opacity: 0;
   }
   50% {
-    opacity: 0.1;
-  }
-  80% {
-    opacity: 0.2;
+    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -869,21 +854,21 @@ footer a {
   animation-duration: 4000ms, 1300ms;
 }
 
-.dishes__card:active .dishes__card--box {
+.dishes__card:hover .dishes__card--box {
   animation: checkbox linear 400ms;
   height: auto;
   width: 30%;
 }
-.dishes__card:active i {
+.dishes__card:hover i {
   animation: icon linear 400ms;
   width: 32px;
   font-size: 2rem;
   color: white;
 }
-.dishes__card:active .dishes__card--title-meal {
+.dishes__card:hover .dishes__card--title-meal {
   width: 100%;
 }
-.dishes__card:active .dishes__card--price {
+.dishes__card:hover .dishes__card--price {
   width: 10%;
 }
 @keyframes icon {
@@ -910,15 +895,15 @@ footer a {
     width: 30%;
   }
 }
-.dishes__price-box--box:active {
+.dishes__price-box--box:hover {
   animation: slideIn linear 500ms;
 }
 
 @media screen and (max-width: 576px) {
-  .dishes__card:active .dishes__price-box--box {
+  .dishes__card:hover .dishes__price-box--box {
     animation: slideIn linear 500ms;
   }
-  .dishes__card:active .dishes__price-box--box i {
+  .dishes__card:hover .dishes__price-box--box i {
     animation: icon-rotate linear 500ms;
   }
   @keyframes slideIn {
@@ -946,10 +931,7 @@ footer a {
     }
   }
 
-  .dishes__card:active .dishes__card--meal, .dishes__card:active .dishes__card--title {
-    width: 60%;
-  }
-  .dishes__card:active .dishes__card p {
+  .dishes__card:hover .dishes__card p {
     margin-top: 0;
   }
 }
@@ -1016,7 +998,7 @@ footer a {
 .page__title .first-heart {
   color: black;
 }
-.page__title .second-heart:active {
+.page__title .second-heart:hover {
   animation: heart-animation;
   animation-duration: 200ms;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
@@ -1042,7 +1024,7 @@ footer a {
   bottom: 2rem;
   right: 2rem;
 }
-.restaurant__card .second-heart:active {
+.restaurant__card .second-heart:hover {
   animation: heart-animation;
   animation-duration: 200ms;
   background: -webkit-linear-gradient(#9356dc, #ff79da);

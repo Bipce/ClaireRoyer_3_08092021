@@ -22,6 +22,17 @@
     border-radius: 25px;
     padding: 0.5rem;
     cursor: pointer;
+    &:hover {
+      background-color: lighten($color: $color-primary, $amount: 30%);
+      box-shadow: 0 7px 10px 0 darken($color: white, $amount: 50%);
+      .menu__icon {
+        background-color: $color-primary;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
     &--word {
       font-weight: bold;
       margin-right: 2.5rem;
@@ -51,17 +62,6 @@
     &__list {
       margin: 1.2rem auto;
       width: 320px;
-      &:active {
-        background-color: lighten($color: $color-primary, $amount: 30%);
-        box-shadow: 0 7px 10px 0 darken($color: white, $amount: 50%);
-        .menu__icon {
-          background-color: $color-primary;
-          color: transparent;
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      }
     }
   }
 }
@@ -121,17 +121,6 @@
       &--word {
         text-align: center;
         margin: auto;
-      }
-      &:hover {
-        background-color: lighten($color: $color-primary, $amount: 30%);
-        box-shadow: 0 7px 10px 0 darken($color: white, $amount: 50%);
-        .menu__icon {
-          background-color: $color-primary;
-          color: transparent;
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
       }
     }
   }

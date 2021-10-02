@@ -23,7 +23,7 @@
       color: black;
     }
     .second-heart {
-      &:active {
+      &:hover {
         animation: heart-animation;
         animation-duration: 200ms;
         background: -webkit-linear-gradient(#9356dc, #ff79da);
@@ -52,7 +52,7 @@
   .second-heart {
     bottom: 2rem;
     right: 2rem;
-    &:active {
+    &:hover {
       animation: heart-animation;
       animation-duration: 200ms;
       background: -webkit-linear-gradient(#9356dc, #ff79da);
