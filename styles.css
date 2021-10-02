@@ -472,7 +472,6 @@ a {
   padding-top: 2rem;
 }
 .page .dishes__card {
-  text-align: center;
   flex-direction: row;
 }
 .page .dishes__card--title, .page .dishes__card--meal {
