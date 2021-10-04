@@ -8,6 +8,10 @@
   margin-bottom: 3rem;
   &:hover {
     box-shadow: 0 7px 10px 0 darken($color: white, $amount: 50%);
+    background: linear-gradient(
+      lighten($color-primary, 10%),
+      lighten($color-secondary, 10%)
+    );
   }
 }
 

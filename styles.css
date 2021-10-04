@@ -949,6 +949,7 @@ footer a {
 }
 .button:hover {
   box-shadow: 0 7px 10px 0 gray;
+  background: linear-gradient(#ae80e5, #fface8);
 }
 
 @media screen and (max-width: 576px) {
