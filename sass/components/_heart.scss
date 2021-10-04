@@ -24,8 +24,8 @@
     }
     .second-heart {
       &:hover {
-        animation: heart-animation;
-        animation-duration: 200ms;
+        animation: heart-animation ease-in-out;
+        animation-duration: 400ms;
         background: -webkit-linear-gradient(#9356dc, #ff79da);
         background-clip: text;
         -webkit-background-clip: text;
@@ -53,8 +53,8 @@
     bottom: 2rem;
     right: 2rem;
     &:hover {
-      animation: heart-animation;
-      animation-duration: 200ms;
+      animation: heart-animation ease-in-out;
+      animation-duration: 400ms;
       background: -webkit-linear-gradient(#9356dc, #ff79da);
       background-clip: text;
       -webkit-background-clip: text;

@@ -1000,8 +1000,8 @@ footer a {
   color: black;
 }
 .page__title .second-heart:hover {
-  animation: heart-animation;
-  animation-duration: 200ms;
+  animation: heart-animation ease-in-out;
+  animation-duration: 400ms;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1026,8 +1026,8 @@ footer a {
   right: 2rem;
 }
 .restaurant__card .second-heart:hover {
-  animation: heart-animation;
-  animation-duration: 200ms;
+  animation: heart-animation ease-in-out;
+  animation-duration: 400ms;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
